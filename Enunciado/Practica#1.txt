@@ -1,0 +1,13 @@
+Desarrollar una página web, utilizando la estructura global.
+
+Datos de interés.
+
+1. Definir el tipo de  documento
+2. Asignar atributos como información para el navegador utilizando meta, y los caracteres especiales, agregar a la página.
+3. Utilizar la etiqueta de párrafo, mínimo de 6 bloques. 
+4. salto de línea 
+5. Agregar  énfasis al contenido la información Importante 
+6. Guardar con extensión (miprimerapaginaweb.html)
+
+Información de envío
+Actividad1_Nombre
