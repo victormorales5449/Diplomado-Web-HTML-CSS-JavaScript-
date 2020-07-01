@@ -1,0 +1,10 @@
+Crear la estructura de un documento HTML5
+
+Utilizar las siguientes etiquetas:  header, nav, utilizar etiqueta de nivel, center, p, section, aside, footer.
+
+Tema favor elegir un tema para desarrollar el proyecto.
+
+Subir el archivo con el siguiente nombre.
+
+Actividad_II_Nombre
+
