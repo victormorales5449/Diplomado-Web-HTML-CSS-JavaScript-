@@ -6,6 +6,18 @@ Los ejercicios estaran en el directorio "Practica"
 
 Se aprendera a trabajar las siguientes Tecnologias
 
-- HTML
-- CSS
-- JAVASCRIPT
+- ### *HTML*
+  * Fundamennto de HTML 
+  * Evolución
+  * Características
+  * Nuevos elementos HTML5
+  * Términos y conceptos importantes
+  * Tipo de documento
+  * Elementos de HTML 4.01 modificados y Elementos HTML5 nuevos
+
+- ### *CSS*
+    * 
+
+- ### *JAVASCRIPT*
+
+
