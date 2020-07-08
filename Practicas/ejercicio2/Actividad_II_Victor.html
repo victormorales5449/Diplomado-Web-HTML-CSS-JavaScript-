@@ -19,51 +19,54 @@
     <title>Estructura HTML 5</title>
 </head>
 <body>
+    <!-- espacio para el contenido de la cabecera -->
     <header>
-        <div class="nav-mobile">
-            <button class="btn-menu-left" type="button" data-task="aside-menu"><i class="icon-menu5"></i></button>
-            <figure class="logotipo-mobile">
-                <a href="#"><img src="descarga.jpeg" alt=""
-                        title="Meta Info RD"></a>
+        <nav class="h-nav">
+            <ul class="n-left">
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Publicaciones</a></li>
+                <li><a href="#">Articulo</a></li>
+            </ul>
+            <figure class="logotipo">
+                <a href="#"><img src="image/carPost.png" width="100" alt="Logo"  title="CarPost"></a>
             </figure>
-            <button class="btn-menu-right" type="button" data-Metainford="toggle-user"><i class="icon-user"></i></button>
-            <div class="menu-user">
-                <a href="#">Iniciar Sesion</a>
-                <!-- <a href="#">Registrarse</a> -->
+            <ul class="n-right">
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">autor</a></li>
+                <li><a href="#">Acceder</a></li>
+            </ul>          
+        </nav>        
+    </header>
+    <!-- fin del contenido de la cabecera -->
+
+    <!-- espacio para el contenido del slider -->
+    <div class="content-slide">
+        <div class="slider">
+            <figure>
+                <!-- tamaño predeterminado hasta que se empiece a trabajar con CSS -->
+                <img width="200" src="image/corvette-marca-independiente.jpg" alt="corvette-marca-independiente" title="corvette">
+            </figure>
+            <div class="slider-text">
+                <h3>Nuevo estilo</h3>
+                <p>Nuevas caractteristicas y confort en un nuevo coche</p>
+                <a class="btn-info" href="#">Mas info</a>
             </div>
         </div>
-
-
-
-
-
-        <figure class="logo">
-            <img src="descarga.jpeg" alt="">
-        </figure>
-        
-        <ul class="h-menu">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#contacto">contacto</a></li>
-            <li><a href="#autor">autor</a></li>
-        </ul>
-    </header>
+    </div>
+    <!-- fin del contenido del slider -->
+    
+    <!-- espacio para el contenido del cuerpo del sitio -->
     <main>
-        <aside>
-            <nav>
-                <ul>
-                    <li><a href="#">dashboard</a></li>
-                    <li><a href="#">Registro</a></li>
-                    <li><a href="#">Usuario</a></li>
-                    <li><a href="#">Salir</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <section>
-            <h2>Calificacion</h2>
-        </section>
+       
+
+     
     </main>
+    <!-- fin del contenido del cuerpo de la pagina -->
+
+    <!-- espacio para el pie de la pagina -->
     <footer>
         <p>Derechos reservados by &copy; Victor Morales 2020</p>
     </footer>    
+    <!-- fin del contenido del pie de la pagina -->
 </body>
 </html>
