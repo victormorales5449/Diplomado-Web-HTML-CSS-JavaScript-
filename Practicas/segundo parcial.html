@@ -10,41 +10,73 @@
          background-color: rgb(176, 224, 224);
       }
 
-      .title{
+      .title {
          margin-top: 50px;
          text-align: center;
       }
 
-      form{
+      form {
          width: 380px;
          margin: 50px auto;
       }
 
-      .input{
+      .input {
          margin-top: 10px;
          display: flex;
       }
 
-      .input label{
+      .input label {
          width: 20%;
          text-align: right;
          padding-right: 5px;
          align-self: center;
       }
-      
-      .input input{
+
+      .input input {
          padding: 6px 12px;
          border: 1px solid #000;
          width: 60%;
       }
 
-      .botones{
+      .botones {
          margin-top: 10px;
          text-align: center;
       }
 
-      .botones button{
+      .botones button {
          padding: 8px 20px;
+      }
+
+      table {
+         width: 480px;
+         border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+         border: 1px solid black;
+      }
+
+      caption {
+         font-size: 18px;
+      }
+
+      thead tr {
+         background-color: rgb(12, 204, 192);
+      }
+
+      td {
+         text-align: center;
+      }
+
+      tr {
+         background-color: #fff;
+      }
+
+      #message {
+         margin: 5px 0;
+         text-align: center;
       }
    </style>
 </head>
@@ -55,29 +87,126 @@
    <form id="form-reg">
       <div class="input">
          <label>Nombre:</label>
-         <input type="text" name="nombre" placeholder="nombre y apellido">
+         <input id="name" type="text" name="nombre" placeholder="Ejemplo: Juan Martinez">
       </div>
 
       <div class="input">
          <label>Matricula:</label>
-         <input type="text" name="Matricula">
+         <input id="matricula" type="text" name="Matricula" placeholder="Ejemplo: 2018-9964">
       </div>
 
       <div class="input">
          <label>Edad: </label>
-         <input type="number" name="edad">
+         <input id="edad" type="number" name="edad" placeholder="Ejemplo: 20">
       </div>
 
       <div class="input">
          <label>Calificacion: </label>
-         <input type="number" name="calificacion">
+         <input id="calificacion" type="number" name="calificacion" placeholder="Ejemplo: 100">
       </div>
 
+      <div id="message"></div>
       <div class="botones">
          <button class="btn-registrar">Registrar</button>
       </div>
    </form>
 
+   <table>
+      <caption>Notas finales del ITLA</caption>
+      <thead>
+         <tr>
+            <th>Nombre</th>
+            <th>Matricula</th>
+            <th> Edad</th>
+            <th>NotaFinal</th>
+         </tr>
+      </thead>
+      <tbody id="est"></tbody>
+   </table>
+
+   <script>
+      // funcion para captrar el id de un elemento
+      const id = x => document.getElementById(x);
+
+      const formUI = id("form-reg");
+
+      const Est = id("est"); // capturamos la etiqueta tbody para insertar los datos
+
+      let registroDB = []; // declaramos un array vacio
+
+      // esta funcion s utiliza para crear un objeto de los datos del formulario
+      const createReg = (a, b, c, d) => {
+
+         const item = {
+            Nombre: a,
+            Matricula: b,
+            Edad: c,
+            Nota: d
+         }
+
+         registroDB.push(item);
+
+         return registroDB;
+      }
+
+      // esta funcion se utiliza para cargar los datos en la tabla
+      const EstTable = () => {
+         Est.innerHTML = "";
+         registroDB = JSON.parse(localStorage.getItem("Estudiantes"));
+
+         if (registroDB === null) {
+            registroDB = [];
+            Est.innerHTML = `
+                  <tr>
+                     <td colspan="4">No hay datos</td>                     
+                  </tr>
+               `;
+         } else {
+            registroDB.forEach(el => {
+               Est.innerHTML += `
+                  <tr>
+                     <td>${el.Nombre}</td>
+                     <td>${el.Matricula}</td>
+                     <td>${el.Edad}</td>
+                     <td>${el.Nota}</td>
+                  </tr>
+               `;
+            });
+         }
+      }
+
+      // capturamos el evento submit para procesar los datos del formulario
+      formUI.addEventListener("submit", e => {
+         e.preventDefault();
+
+         const n = id("name"),
+            m = id("matricula"),
+            ed = id("edad"),
+            no = id("calificacion");
+
+         if (n.value !== "" || m.value !== "" || ed.value !== "" || no.value !== "") {
+            const reulst = createReg(n.value, m.value, ed.value, no.value);
+            localStorage.setItem("Estudiantes", JSON.stringify(reulst));
+            EstTable();
+            const message = id("message").innerHTML = "Datos Guardados";
+            formUI.reset();
+
+            setTimeout(() => {
+               const message = id("message").innerHTML = "";
+            }, 4000);
+         } else {
+            const message = id("message").innerHTML = "Debes llenar los campos";
+            
+            setTimeout(() => {
+               const message = id("message").innerHTML = "";
+            }, 4000);
+         }
+      });
+
+      // este evento es para cargar los datos en la tabla despues que cargue la pagina
+      document.addEventListener("DOMContentLoaded", EstTable);
+
+   </script>
 </body>
 
 </html>

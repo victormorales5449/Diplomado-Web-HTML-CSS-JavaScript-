@@ -1,6 +1,7 @@
 Desarrollar una página web estandarizada
 
-Debe contener: Menú, enlace, section, aside,listas ordenadas y desordenadas, tablas, imágenes video, audio, Canvas y SVG, footer
+Debe contener: Menú, enlace, section, aside,listas ordenadas y desordenadas, 
+tablas, imágenes, video, audio, Canvas, SVG y footer
 
 Mínimo de 2 documento HTML
 

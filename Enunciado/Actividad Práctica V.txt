@@ -1,6 +1,7 @@
  Desarrollar  una página web, utilizar las siguientes etiquetas
 
-Header, nav, h1, h2, section, aside, footer, Mark, small Cite, addres, wbr, time y data
+Header, nav, h1, h2, section, aside, footer, Mark, small Cite, 
+addres, wbr, time y data
 
 
 Mínimo de 2 documento HTML
