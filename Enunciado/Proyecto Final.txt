@@ -1,0 +1,9 @@
+Desarrollar una página web estandarizada
+
+Debe contener: Menú, enlace, section, aside,listas ordenadas y desordenadas, tablas, imágenes video, audio, Canvas y SVG, footer
+
+Mínimo de 2 documento HTML
+
+Subir el archivo con el siguiente nombre.
+
+Actividad_FinaI_Nombre

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Estudiantes del ITLA </title>
+   <style>
+      body {
+         background-color: rgb(176, 224, 224);
+      }
+
+      .title{
+         margin-top: 50px;
+         text-align: center;
+      }
+
+      form{
+         width: 380px;
+         margin: 50px auto;
+      }
+
+      .input{
+         margin-top: 10px;
+         display: flex;
+      }
+
+      .input label{
+         width: 20%;
+         text-align: right;
+         padding-right: 5px;
+         align-self: center;
+      }
+      
+      .input input{
+         padding: 6px 12px;
+         border: 1px solid #000;
+         width: 60%;
+      }
+
+      .botones{
+         margin-top: 10px;
+         text-align: center;
+      }
+
+      .botones button{
+         padding: 8px 20px;
+      }
+   </style>
+</head>
+
+<body>
+
+   <h1 class="title">Bienvedidos al ITLA</h1>
+   <form id="form-reg">
+      <div class="input">
+         <label>Nombre:</label>
+         <input type="text" name="nombre" placeholder="nombre y apellido">
+      </div>
+
+      <div class="input">
+         <label>Matricula:</label>
+         <input type="text" name="Matricula">
+      </div>
+
+      <div class="input">
+         <label>Edad: </label>
+         <input type="number" name="edad">
+      </div>
+
+      <div class="input">
+         <label>Calificacion: </label>
+         <input type="number" name="calificacion">
+      </div>
+
+      <div class="botones">
+         <button class="btn-registrar">Registrar</button>
+      </div>
+   </form>
+
+</body>
+
+</html>
