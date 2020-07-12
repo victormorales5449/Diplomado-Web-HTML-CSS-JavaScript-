@@ -4,86 +4,14 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title> Estudiantes del ITLA </title>
-   <style>
-      body {
-         background-color: rgb(176, 224, 224);
-      }
-
-      .title {
-         margin-top: 50px;
-         text-align: center;
-      }
-
-      form {
-         width: 380px;
-         margin: 50px auto;
-      }
-
-      .input {
-         margin-top: 10px;
-         display: flex;
-      }
-
-      .input label {
-         width: 20%;
-         text-align: right;
-         padding-right: 5px;
-         align-self: center;
-      }
-
-      .input input {
-         padding: 6px 12px;
-         border: 1px solid #000;
-         width: 60%;
-      }
-
-      .botones {
-         margin-top: 10px;
-         text-align: center;
-      }
-
-      .botones button {
-         padding: 8px 20px;
-      }
-
-      table {
-         width: 480px;
-         border-collapse: collapse;
-      }
-
-      table,
-      th,
-      td {
-         border: 1px solid black;
-      }
-
-      caption {
-         font-size: 18px;
-      }
-
-      thead tr {
-         background-color: rgb(12, 204, 192);
-      }
-
-      td {
-         text-align: center;
-      }
-
-      tr {
-         background-color: #fff;
-      }
-
-      #message {
-         margin: 5px 0;
-         text-align: center;
-      }
-   </style>
+   <title> Calificacion de estudiantes </title>
+   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-   <h1 class="title">Bienvedidos al ITLA</h1>
+   <h1 class="title">Publicar notas de Estudiantes</h1>
+
    <form id="form-reg">
       <div class="input">
          <label>Nombre:</label>
@@ -112,13 +40,14 @@
    </form>
 
    <table>
-      <caption>Notas finales del ITLA</caption>
+      <caption>Notas finales de los estudiantes</caption>
       <thead>
          <tr>
             <th>Nombre</th>
             <th>Matricula</th>
             <th> Edad</th>
             <th>NotaFinal</th>
+            <th>Accion</th>
          </tr>
       </thead>
       <tbody id="est"></tbody>
@@ -146,11 +75,26 @@
 
          registroDB.push(item);
 
-         return registroDB;
+         return item;
+      }
+
+      // esta funcion es para guardar en el localstorage
+      const guardarDB = () => {
+         localStorage.setItem("Estudiantes", JSON.stringify(registroDB));
+      }
+
+      // Esta funcion es para modificar el contenido
+      const editarDB = data => {
+
+      }
+
+      // esta funcion es para eliminar contenidos
+      const eliminarDB = dato => {
+
       }
 
       // esta funcion se utiliza para cargar los datos en la tabla
-      const EstTable = () => {
+      const showTable = () => {
          Est.innerHTML = "";
          registroDB = JSON.parse(localStorage.getItem("Estudiantes"));
 
@@ -158,7 +102,7 @@
             registroDB = [];
             Est.innerHTML = `
                   <tr>
-                     <td colspan="4">No hay datos</td>                     
+                     <td colspan="5">No hay datos</td>                     
                   </tr>
                `;
          } else {
@@ -169,6 +113,9 @@
                      <td>${el.Matricula}</td>
                      <td>${el.Edad}</td>
                      <td>${el.Nota}</td>
+                     <td>
+                        <a class="btn-editar" href="${el.Nombre}">Editar</a>
+                        <a class="btn-eliminar" href="${el.Nombre}">Eliminar</a>
                   </tr>
                `;
             });
@@ -185,18 +132,16 @@
             no = id("calificacion");
 
          if (n.value !== "" || m.value !== "" || ed.value !== "" || no.value !== "") {
-            const reulst = createReg(n.value, m.value, ed.value, no.value);
-            localStorage.setItem("Estudiantes", JSON.stringify(reulst));
-            EstTable();
+            createReg(n.value, m.value, ed.value, no.value);
+            guardarDB();
+            showTable();
             const message = id("message").innerHTML = "Datos Guardados";
             formUI.reset();
-
             setTimeout(() => {
                const message = id("message").innerHTML = "";
             }, 4000);
          } else {
             const message = id("message").innerHTML = "Debes llenar los campos";
-            
             setTimeout(() => {
                const message = id("message").innerHTML = "";
             }, 4000);
@@ -204,7 +149,7 @@
       });
 
       // este evento es para cargar los datos en la tabla despues que cargue la pagina
-      document.addEventListener("DOMContentLoaded", EstTable);
+      document.addEventListener("DOMContentLoaded", showTable);
 
    </script>
 </body>
