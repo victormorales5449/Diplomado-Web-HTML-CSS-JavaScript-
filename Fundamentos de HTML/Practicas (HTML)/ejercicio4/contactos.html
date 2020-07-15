@@ -20,7 +20,7 @@
     <meta name="keywords" content="Car, Mercedez benz, toyota" />
     <title>Post Car</title>
     <link rel="stylesheet" href="fonts/style-icon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactos.css">
 </head>
 
 <body>
@@ -58,106 +58,52 @@
         </nav>
     </header>
 
-    <!-- Contenido del cuerpo de la pagina -->
-    <main class="content">
-        <!-- section para el slider de la pagina principal -->
-        <section class="wrapper-slider">
-            <div class="container-slider">
-                <figure class="slide-image">
-                    <img src="img/corvette-marca-independiente.jpg" alt="slide-img01" title="slide-img01">
-                </figure>
-                <div class="slide-text">
-                    <h2>Bienvenidos!</h2>
-                    <p>Un sitio lleno de informacion y Servicios</p>
-                    <a class="btn-info" href="#">More Info</a>
-                </div>
+    <main>
+        <section class="info-contacto">
+            <div class="map">
+                <h2>Nuestra localización</h2>
+                <div class="localizacion"></div>
+            </div>
+
+            <div class="information">
+                <h2>información de la compañia</h2>
+                <p>Nos dedicamos al mundo de la informacion a nivel general.</p>
+                <p>
+                    <b>Telefono:</b>
+                    <span>829-401-3827</span>
+                </p>
+                <p>
+                    <b>Email:</b>
+                    <span>victormorales_1588@hotmail.com</span>
+                </p>
+                <ul id="social" class="list-redes"></ul>
             </div>
         </section>
 
-        <!-- section para las herramientas que brindara la aplicacion -->
-        <section class="wrapper-tools">
-            <h2>
-                Servicios
-                <span>Servicios Multiples de Tecnologias</span>
-            </h2>
-            <div class="container-tools">
-                <div class="tools-wrap">
-                    <figure>
-                        <i class="icono icon-music"></i>
-                    </figure>
-                    <div class="tools-text">
-                        <h3>Música</h3>
-                        <p><mark>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae?</mark></p>
-                        <a class="btn-info" href="#">Read More</a>
-                    </div>
+        <div class="form-contacto">
+            <h2>Escribenos</h2>
+            <form id="form-contacto">
+                <div class="form-control">
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan Perez">
                 </div>
-
-                <div class="tools-wrap">
-                    <figure>
-                        <i class="icono icon-tools"></i>
-                    </figure>
-                    <div class="tools-text">
-                        <h3>Mantenimiento</h3>
-                        <p><cite>ipsum dolor sit amet, consectetur adipisicing elit. Itaque, dolore at!</cite></p>
-                        <a class="btn-info" href="#">Read More</a>
-                    </div>
+                <div class="form-control">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Ej: juanperez@gmail.com">
                 </div>
-
-                <div class="tools-wrap">
-                    <figure>
-                        <i class="icono icon-satellite2"></i>
-                    </figure>
-                    <div class="tools-text">
-                        <h3>Tecnología</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis modi voluptatem.</p>
-                        <a class="btn-info" href="#">Read More</a>
-                    </div>
+                <div class="form-control">
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Ej: 809-548-4352">
                 </div>
-
-                <div class="tools-wrap">
-                    <iframe width="330" height="330" src="https://www.youtube.com/embed/B4Th3LxCgb4" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="form-control">
+                    <label for="asunto">Asunto:</label>
+                    <textarea id="asunto" name="asunto" id="" cols="30" rows="10"></textarea>
                 </div>
-            </div>
-        </section>
-
-        <!-- publicaciones de la aplicacion -->
-        <section class="wrapper-info">
-            <div class="container-info">
-                <h2 class="encabezado">Multiples marcas</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, voluptatum! Consectetur, fugit!</p>
-                <a class="btn-green" href="#"><span>More Info Here</span></a>
-            </div>
-        </section>
-
-        <!-- mini eslogan de los servicios que brindara la aplicación -->
-        <section class="wrapper-join">
-            <div class="join-main">
-                <div class="join">
-                    <figure><i class="ico icon-clock"></i></figure>
-                    <h3>time Less</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <div class="form-control">
+                    <button class="btn-success">Enviar</button>
                 </div>
-
-                <div class="join">
-                    <figure><i class="ico icon-user"></i></figure>
-                    <h3>TimeLine UI </h3>
-                    <p>Lorem ipsum dolor sit.</p>
-                </div>
-
-                <div class="join">
-                    <figure><i class="ico icon-location"></i></figure>
-                    <h3>Location</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, voluptates!</p>
-                </div>
-
-                <div class="join">
-                    <figure><i class="ico icon-calendar"></i></figure>
-                    <h3>Calendar</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                </div>
-            </div>
-        </section>
+            </form>
+        </div>
     </main>
 
     <!-- Este es el pie de la pagina  -->
@@ -218,44 +164,40 @@
     </footer>
 
     <script>
-        // valiables globales 
-
         const Select = x => document.querySelector(x);
         const Selects = x => document.querySelectorAll(x);
 
-        Select('[data-metainford="toggle-left"]').addEventListener('click', () => {
-            // COGIGO PARA EL MENU DESPLEGABLE
-            let timer;
-            if (Select('.nav-header').classList.contains('visible')) {
-                Select('.nav-header').classList.remove('visible');
-                // $('.home-container').removeClass('overt');
-                timer = setTimeout(() => {
-                    Select('.nav-header').classList.remove('visible');
-                }, 0);
-            } else {
-                clearTimeout(timer);
-                Select('.nav-header').classList.add('visible');
-                setTimeout(() => { }, 2000);
-            }
-        });
+        const seticon = Select('#social');
+        let Socials = {
+            Twitter: {
+                url: 'https://twitter.com/Ingmorales54',
+                icon: 'icon-twitter',
+                name: 'Twitter'
+            },
+            Linkedin: {
+                url: 'https://www.linkedin.com/in/victor-l-morales-m/',
+                icon: 'icon-linkedin',
+                name: 'Linkedin'
+            },
+            Whatsapp: {
+                url: 'https://wa.me/18294013827',
+                icon: 'icon-whatsapp',
+                name: 'Whatsapp'
+            },
+            Telegram: {
+                url: 'https://t.me/victormorales54',
+                icon: 'icon-telegram',
+                name: 'Telegram'
+            },
+        }
 
-        Select("[data-metainford='toggle-user'").addEventListener('click', () => {
-            Select(".menu-user").classList.toggle('menu-user-visible');
-        });
+        let socialicon = '';
+        for (let social in Socials) {
+            socialicon +=
+                `<li><a href="${Socials[social].url}" title="${Socials[social].name}" target="_blank"><i class="socialicon ${Socials[social].icon}"></i></a></li>`;
+        }
 
-        addEventListener('scroll', evt => {
-            let scrollY = window.scrollY,
-                page = window.innerWidth;
-            if (page > 768) {
-                if (scrollY > 324) {
-                    Select('.nav-header').classList.add('psc');
-                    Select('#logo').classList.add('psa');
-                } else {
-                    Select('.nav-header').classList.remove('psc');
-                    Select('#logo').classList.remove('psa');
-                }
-            }
-        });
+        seticon.innerHTML = socialicon;
 
     </script>
 </body>

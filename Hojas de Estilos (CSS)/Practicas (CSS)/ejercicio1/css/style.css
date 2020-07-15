@@ -1,0 +1,11 @@
+body{
+    background-image: url(../ima/corvette-marca-independiente.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    font-size: 28;
+}

@@ -1,0 +1,51 @@
+body {
+    background-color: #f1f1f5;
+}
+
+header {
+    display: flex;
+    background-image: url(../ima/corvette-marca-independiente.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+figure {
+    width: 80px;
+}
+
+figure img {
+    max-width: 100%;
+    background-color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 8px 10px;
+    color: white;
+}
+
+header nav a:hover {
+    background-color: teal;
+    color: #fff;
+}
+
+.parrafo{
+    text-indent: 15px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 768px){
+    header{
+        justify-content: space-between;
+    }
+}

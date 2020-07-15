@@ -1,0 +1,32 @@
+body{
+    background-color: #f1f1f5;
+}
+
+header{
+    display: flex;
+}
+
+figure{
+    width: 80px;
+}
+
+figure img{
+    max-width: 100%;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a{
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 8px 10px;
+}
+
+header nav a:hover{
+    background-color: teal;
+    color: #fff;
+}
