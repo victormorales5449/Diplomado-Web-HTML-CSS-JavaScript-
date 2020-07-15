@@ -1,0 +1,41 @@
+body{
+    display: grid;
+    grid-template: "header header"
+                    "nav nav"
+                    "section section"
+                    "footer footer";
+}
+
+header {
+    background-color: #25ff47;
+    height: 50px;
+    grid-area: header;
+}
+
+nav{
+    height: 50px;
+    background-color: #206d85;
+    grid-area: nav;
+}
+
+aside {
+    width: 230px;
+    background-color: #000;
+    height: 100%;
+    top: 58px;
+    position: fixed;
+    grid-area: aside;
+}
+
+section{
+    /* width: 100%; */
+    background-color: aqua;
+    height: 442px;
+    grid-area: section;
+}
+
+footer{
+    background-color: #0055ff;
+    height: 50px;
+    grid-area: footer;
+}

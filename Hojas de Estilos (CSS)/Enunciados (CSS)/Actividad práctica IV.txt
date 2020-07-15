@@ -1,0 +1,4 @@
+Diseñar una página, para una adoptar animales que tenga,
+ menú, imagines, bloques lista, aplicando color y tamaño 
+ y tipo de letras
+

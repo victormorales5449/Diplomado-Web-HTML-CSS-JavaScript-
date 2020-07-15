@@ -1,0 +1,25 @@
+
+body{
+    background:#ccc;
+}
+form{
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.input{
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.input label{
+    width: 30%;
+    text-align: right;
+}
+
+.input input{
+    width: 70%;
+}

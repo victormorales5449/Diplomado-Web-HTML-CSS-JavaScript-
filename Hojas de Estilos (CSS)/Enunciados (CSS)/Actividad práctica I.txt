@@ -1,0 +1,4 @@
+Crear un documento html, vincular una hoja de estilo:
+
+parámetros agregándole una imagen de fondo, utilizar  
+h1 con un título aplicarle color y tamaño. 

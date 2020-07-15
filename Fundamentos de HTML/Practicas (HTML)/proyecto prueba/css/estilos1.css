@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+
+.header-fondo{
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    height: 100vh;
+    min-height: 400px;
+    background-position: center;
+}
+
+.menu{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    color: #fff;
+    font-size: 18px;
+}
+
+.title{
+    color: teal;
+    margin-top: 30%;
+    margin-left: 20px;    
+}
+
+section{
+    display: grid;
+    grid-template: "caja1 caja2";
+}
+
+.caja1{
+    /* width: 50%; */
+    background-color: salmon;
+    grid-area: caja1;
+}
+
+.caja2{
+    /* width: 50%; */
+    background-color: seagreen;
+    grid-area: caja2;
+}

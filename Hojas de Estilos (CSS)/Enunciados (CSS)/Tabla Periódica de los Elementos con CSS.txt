@@ -1,0 +1,4 @@
+Colocar el archivo que contenga las etiquetas en formato 
+HTML5 para crear un tabla como la que se muestra en la 
+figura de más abajo. Usee CSS para darle un mejor formato 
+y estilo.

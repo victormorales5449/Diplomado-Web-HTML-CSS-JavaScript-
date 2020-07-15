@@ -1,0 +1,4 @@
+Crear un documento html, agregándole una menú, 
+creando class, Id, imagen de fondo.
+
+Mínimo 2 páginas.
