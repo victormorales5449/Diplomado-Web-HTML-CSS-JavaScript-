@@ -1,0 +1,33 @@
+
+
+.element{
+    width: 91px;
+    padding: 4px;
+    margin: 1.5px;
+}
+
+.element .c-symbol{
+    border-radius: 5px;
+    border: 1px solid #000000;
+    height: 89px;
+    padding-top: 5px;
+}
+
+.element .group,
+.element .h-symbol{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.element .symbol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element .text{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+}
