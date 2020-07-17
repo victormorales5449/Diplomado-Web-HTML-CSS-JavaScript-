@@ -1,5 +1,28 @@
 
 
+.periodo1,
+.periodo2,
+.periodo3,
+.periodo4,
+.periodo5,
+.periodo6,
+.periodo7,
+.periodo8,
+.periodo9{
+    display: flex;
+}
+
+.periodo1,
+.periodo2,
+.periodo3{
+    justify-content: space-between;
+}
+
+.periodo2 .bloque,
+.periodo3 .bloque {
+    display: flex;
+}
+
 .element{
     width: 91px;
     padding: 4px;
@@ -18,16 +41,18 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 5px;
+    line-height: 20px;
 }
 
 .element .symbol{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    line-height: 30px;
 }
 
 .element .text{
     text-transform: uppercase;
     text-align: center;
     font-size: 13px;
+    margin: 5px 0;
+    line-height: 25px;
 }

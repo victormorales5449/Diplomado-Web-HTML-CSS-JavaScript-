@@ -1,0 +1,310 @@
+:root {
+    --metales-alcalinos: #F66402;
+    --alacalinotorreos: #FDCB13;
+    --metales: #FDFB06;
+    --metales-trasision: #BEF708;
+    --lantanidos: #03DEB8;
+    --metaloides: #05E15D;
+    --no-metales: #5C7BF8;
+    --halogenos: #E82DBC;
+    --gases-nobles: #02D0FC;
+    --antinidos: #57C576;
+}
+
+table {
+    font-size: 13px;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+/* Regla CSS para la descripcion */
+.c-element {
+    position: absolute;
+    width: 74px;
+    height: 72px;
+    border: 1px solid #ccc;
+    top: 130px;
+    left: 500px;
+}
+
+.c-element .element {
+    padding: 5px;
+}
+
+.c-element .element span {
+    display: inline-block;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.c-element .element span:nth-child(1) {
+    margin-right: 8px;
+}
+
+.c-element .element span:nth-child(1)::before,
+.c-element .element span:nth-child(2)::before,
+.c-element .element div:nth-child(3)::before,
+.c-element .element div:nth-child(4)::before {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+
+}
+
+.c-element .element span:nth-child(1)::after,
+.c-element .element span:nth-child(2)::after,
+.c-element .element div:nth-child(3)::after,
+.c-element .element div:nth-child(4)::after{
+    position: absolute;
+    font-size: 15px;
+}
+
+.c-element .element span:nth-child(1)::before {
+    left: -52px;
+    top: -17px;
+    transform: rotate(45deg);
+}
+
+.c-element .element span:nth-child(1)::after {
+    content: "Número Atómico";
+    left: -155px;
+    top: -53px;
+    width: 121px;
+}
+
+.c-element .element span:nth-child(2)::before {
+    right: -52px;
+    top: -17px;
+    transform: rotate(-45deg);
+}
+
+.c-element .element span:nth-child(2)::after {
+    content: "Masa Atómica Relativa";
+    right: -155px;
+    top: -53px;
+    width: 121px;
+}
+
+.c-element .element div:nth-child(3)::before {
+   left: -34px;
+   top: 41px;
+}
+
+.c-element .element div:nth-child(3)::after {
+    content: "Símbolo Quimico";
+    left: -155px;
+}
+
+.c-element .element div:nth-child(4)::before {
+    right: -42px;
+    top: 64px;
+}
+
+.c-element .element div:nth-child(4)::after {
+    content: "Nombre del Elemento";
+    right: -185px;
+    width: 150px;
+}
+
+.c-element .element span:nth-child(1) {
+    margin-right: 8px;
+}
+
+.c-element .element span:nth-child(1) {
+    margin-right: 8px;
+}
+/* Fin de la regla css para la descripcion */
+
+caption {
+    font-size: 30px;
+    color: blue;
+    text-transform: uppercase;
+}
+
+tr td div:nth-child(3) {
+    font-size: 19px;
+    color: #000;
+    font-weight: bold;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    border: 1px solid #ccc;
+}
+
+td:first-child {
+    border: none;
+    font-size: 17px;
+}
+
+.no-border {
+    border: none;
+}
+
+.grupo td {
+    border: none;
+    position: relative;
+}
+
+.grupo td span:nth-child(2) {
+    margin-left: 10px;
+}
+
+.grupo td:nth-child(n+2) span {
+    display: block;
+    text-align: center;
+}
+
+.grupo td:nth-child(n+4) {
+    bottom: -196px;
+}
+
+.grupo td:nth-child(3),
+.grupo td:nth-child(n+14) {
+    bottom: -60px;
+}
+
+.grupo td:nth-child(19) {
+    bottom: 0;
+}
+
+.g-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.g-text span:nth-child(2) {
+    margin-left: 0;
+}
+
+.actinidos {
+    background-color: var(--antinidos);
+}
+
+.actinidos td:first-child {
+    background-color: white;
+}
+
+.lantanidos {
+    background-color: var(--lantanidos);
+}
+
+.lantanidos td:first-child {
+    background-color: #fff;
+}
+
+.actinidos span,
+.lantanidos span,
+.periodo1 span,
+.periodo2 span,
+.periodo3 span,
+.periodo4 span,
+.periodo5 span,
+.periodo6 span,
+.periodo7 span {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+
+.actinidos span:nth-child(1),
+.lantanidos span:nth-child(1),
+.periodo1 span:nth-child(1),
+.periodo2 span:nth-child(1),
+.periodo3 span:nth-child(1),
+.periodo4 span:nth-child(1),
+.periodo5 span:nth-child(1),
+.periodo6 span:nth-child(1),
+.periodo7 span:nth-child(1) {
+    margin-right: 10px;
+}
+
+.periodo2 td:nth-child(2),
+.periodo3 td:nth-child(2),
+.periodo4 td:nth-child(2),
+.periodo5 td:nth-child(2),
+.periodo6 td:nth-child(2),
+.periodo7 td:nth-child(2) {
+    background-color: var(--metales-alcalinos);
+}
+
+.periodo2 td:nth-child(3),
+.periodo3 td:nth-child(3),
+.periodo4 td:nth-child(3),
+.periodo5 td:nth-child(3),
+.periodo6 td:nth-child(3),
+.periodo7 td:nth-child(3) {
+    background-color: var(--alacalinotorreos);
+}
+
+.periodo4 td:nth-child(n+4),
+.periodo5 td:nth-child(n+4),
+.periodo6 td:nth-child(n+5),
+.periodo7 td:nth-child(n+5) {
+    background-color: var(--metales-trasision);
+}
+
+.periodo4 td:nth-child(n+14),
+.periodo5 td:nth-child(n+14),
+.periodo6 td:nth-child(n+14),
+.periodo7 td:nth-child(n+14) {
+    background-color: #fff;
+}
+
+.periodo3 td:nth-child(5),
+.periodo4 td:nth-child(14),
+.periodo5 td:nth-child(15),
+.periodo5 td:nth-child(14),
+.periodo6 td:nth-child(15),
+.periodo6 td:nth-child(16),
+.periodo6 td:nth-child(14),
+.periodo7 td:nth-child(14),
+.periodo7 td:nth-child(15),
+.periodo7 td:nth-child(16),
+.periodo7 td:nth-child(17) {
+    background-color: var(--metales);
+}
+
+.periodo1 td:nth-child(4),
+.periodo2 td:nth-child(10),
+.periodo3 td:nth-child(10),
+.periodo4 td:nth-child(19),
+.periodo5 td:nth-child(19),
+.periodo6 td:nth-child(19),
+.periodo7 td:nth-child(19) {
+    background-color: var(--gases-nobles);
+}
+
+.periodo2 td:nth-child(9),
+.periodo3 td:nth-child(9),
+.periodo4 td:nth-child(18),
+.periodo5 td:nth-child(18),
+.periodo6 td:nth-child(18),
+.periodo7 td:nth-child(18) {
+    background-color: var(--halogenos);
+}
+
+.periodo1 td:nth-child(2),
+.periodo2 td:nth-child(6),
+.periodo2 td:nth-child(7),
+.periodo2 td:nth-child(8),
+.periodo3 td:nth-child(7),
+.periodo3 td:nth-child(8),
+.periodo4 td:nth-child(17) {
+    background-color: var(--no-metales);
+}
+
+.periodo2 td:nth-child(5),
+.periodo3 td:nth-child(6),
+.periodo4 td:nth-child(15),
+.periodo4 td:nth-child(16),
+.periodo5 td:nth-child(16),
+.periodo5 td:nth-child(17),
+.periodo6 td:nth-child(17) {
+    background-color: var(--metaloides);
+}
