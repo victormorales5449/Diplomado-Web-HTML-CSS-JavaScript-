@@ -24,32 +24,32 @@
     <section>
         <h1>Formulario de empleado</h1>
         <form id="form-empleado" class="form-empleado">
-            <div class="input">
+            <div class="input-control">
                 <label for="codigo">Codigo</label>
                 <input type="text" name="codigo" id="codigo">
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="cedula">cedula</label>
                 <input type="text" name="cedula" id="cedula">
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="fecha_naci">Fecha nacimiento</label>
                 <input type="date" name="fecha_naci" id="fecha_naci" required>
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="fecha_ingreso">fecha_ingreso</label>
                 <input type="date" name="fecha_ingreso" id="fecha_ingreso">
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" required maxlength="40">
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="apellido">Apellido</label>
                 <input type="text" name="apellido" id="apellido" maxlength="40">
             </div>
@@ -68,109 +68,121 @@
 
             <div class="e-civil">
                 <label for="estado_civil">Estado civil</label>
-                <select name="estado_civil" id="estado_civil">
-                    <option value="">Seleccionar...</option>
-                    <option value="soltero">Soltero</option>
-                    <option value="Casado">Casado</option>
-                    <option value="Union_libre">Union libre</option>
-                    <option value="Viudo">Viudo(a)</option>
-                </select>
+                <div class="select">
+                    <select name="estado_civil" id="estado_civil">
+                        <option value="">Seleccionar...</option>
+                        <option value="soltero">Soltero</option>
+                        <option value="Casado">Casado</option>
+                        <option value="Union_libre">Union libre</option>
+                        <option value="Viudo">Viudo(a)</option>
+                    </select>
+                </div>
             </div>
 
             <div class="t-sangre">
                 <label for="tipo_sangre">Tipo sangre</label>
-                <select name="tipo_sangre" id="tipo_sangre">
-                    <option value="">Seleccionar...</option>
-                    <option value="A+">A +</option>
-                    <option value="B+">B +</option>
-                    <option value="AB+">AB +</option>
-                    <option value="O+">O +</option>
-                    <option value="A-">A -</option>
-                    <option value="AB-">AB -</option>
-                    <option value="O-">O -</option>
-                </select>
+                <div class="select">
+                    <select name="tipo_sangre" id="tipo_sangre">
+                        <option value="">Seleccionar...</option>
+                        <option value="A+">A +</option>
+                        <option value="B+">B +</option>
+                        <option value="AB+">AB +</option>
+                        <option value="O+">O +</option>
+                        <option value="A-">A -</option>
+                        <option value="AB-">AB -</option>
+                        <option value="O-">O -</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="nacionalidad">Nacionalidad</label>
                 <input type="text" name="nacionalidad" id="nacionalidad">
             </div>
 
             <div class="religion">
                 <label for="religion">Religion</label>
-                <select name="religion" id="religion">
-                    <option value="">Seleccionar...</option>
-                    <option value="Cristianismo">Cristianismo</option>
-                    <option value="Islam">Islam</option>
-                    <option value="Hinduismo">Hinduismo</option>
-                    <option value="Budismo">Budismo</option>
-                </select>
+                <div class="select">
+                    <select name="religion" id="religion">
+                        <option value="">Seleccionar...</option>
+                        <option value="Cristianismo">Cristianismo</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Hinduismo">Hinduismo</option>
+                        <option value="Budismo">Budismo</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="telefono">Telefono</label>
                 <input type="tel" name="telefono" id="telefono">
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email">
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="direccion">Direccion</label>
                 <input type="text" name="direccion" id="direccion" maxlength="100">
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="salario_mensual">Salario mensual</label>
                 <input type="number" name="salario_mensual" id="salario_mensual">
             </div>
 
             <div class="departamento_perteneciente">
                 <label for="departamento_perteneciente">Departamento perteneciente</label>
-                <select name="departamento_perteneciente" id="departamento_perteneciente">
-                    <option value="">Seleccionar...</option>
-                    <option value="Contabilidad">Contabilidad</option>
-                    <option value="Recursos_humano">Recursos_humano</option>
-                    <option value="Pedagogia">Pedagogia</option>
-                    <option value="Administrativo">Administrativo</option>
-                </select>
+                <div class="select">
+                    <select name="departamento_perteneciente" id="departamento_perteneciente">
+                        <option value="">Seleccionar...</option>
+                        <option value="Contabilidad">Contabilidad</option>
+                        <option value="Recursos_humano">Recursos_humano</option>
+                        <option value="Pedagogia">Pedagogia</option>
+                        <option value="Administrativo">Administrativo</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="nombre_contacto_emergencia">Nombre contacto emergencia</label>
                 <input type="text" name="nombre_contacto_emergencia" id="nombre_contacto_emergencia">
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="telefono_contacto_emergencia">Telefono contacto emergencia</label>
                 <input type="tel" name="telefono_contacto_emergencia" id="telefono_contacto_emergencia">
             </div>
 
             <div class="afp">
                 <label for="afp_perteneciente">AFP perteneciente</label>
-                <select name="afp_perteneciente" id="afp_perteneciente">
-                    <option value="">Seleccionar...</option>
-                    <option value="AFP_Reservas">AFP Reservas</option>
-                    <option value="AFP_Popular">AFP Popular</option>
-                    <option value="AFP_Atlantico">AFP Atlántico</option>
-                    <option value="AFP_Siembra">AFP Siembra</option>
-                    <option value="AFP_Crecer">AFP Crecer</option>
-                </select>
+                <div class="select">
+                    <select name="afp_perteneciente" id="afp_perteneciente">
+                        <option value="">Seleccionar...</option>
+                        <option value="AFP_Reservas">AFP Reservas</option>
+                        <option value="AFP_Popular">AFP Popular</option>
+                        <option value="AFP_Atlantico">AFP Atlántico</option>
+                        <option value="AFP_Siembra">AFP Siembra</option>
+                        <option value="AFP_Crecer">AFP Crecer</option>
+                    </select>
+                </div>
             </div>
 
             <div class="ars">
                 <label for="ars_perteneciente">ARS perteneciente</label>
-                <select name="ars_perteneciente" id="ars_perteneciente">
-                    <option value="">Seleccionar...</option>
-                    <option value="ars_humano">ARS Humano</option>
-                    <option value="ars_siembra">ARSSiembra</option>
-                    <option value="ARS_La_Colonial">ARS La Colonial</option>
-                    <option value="ARS_Universal">ARS Universal</option>
-                    <option value="ARS_Renacer">ARS Renacer</option>
-                    <option value="ARS_Palic_Salud">ARS Palic Salud</option>
-                </select>
+                <div class="select">
+                    <select name="ars_perteneciente" id="ars_perteneciente">
+                        <option value="">Seleccionar...</option>
+                        <option value="ars_humano">ARS Humano</option>
+                        <option value="ars_siembra">ARSSiembra</option>
+                        <option value="ARS_La_Colonial">ARS La Colonial</option>
+                        <option value="ARS_Universal">ARS Universal</option>
+                        <option value="ARS_Renacer">ARS Renacer</option>
+                        <option value="ARS_Palic_Salud">ARS Palic Salud</option>
+                    </select>
+                </div>
             </div>
 
             <div class="observacion">

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="theme-class" content="#000000" />
     <meta name="msapplication-navbutton-class" content="#000000" />
@@ -18,40 +19,41 @@
     <title>Formulario de Estudiante</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <section>
         <h1>Formulario de Estudiante</h1>
         <form id="form-estudiante" class="form-estudiante">
-            <div class="input">
+            <div class="input-control">
                 <label for="matricula">matricula</label>
                 <input type="text" name="matricula" id="matricula">
             </div>
-    
-            <div class="input">
+
+            <div class="input-control">
                 <label for="cedula">cedula</label>
                 <input type="text" name="cedula" id="cedula">
             </div>
-    
-            <div class="input">
+
+            <div class="input-control">
                 <label for="fecha_naci">Fecha nacimiento</label>
                 <input type="date" name="fecha_naci" id="fecha_naci" required>
             </div>
-    
-            <div class="input">
+
+            <div class="input-control">
                 <label for="fecha_ingreso">fecha_ingreso</label>
                 <input type="date" name="fecha_ingreso" id="fecha_ingreso">
             </div>
-    
-            <div class="input">
+
+            <div class="input-control">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" required maxlength="40">
             </div>
-    
-            <div class="input">
+
+            <div class="input-control">
                 <label for="apellido">Apellido</label>
                 <input type="text" name="apellido" id="apellido" maxlength="40">
             </div>
-    
+
             <div class="genero">
                 <p>Genero</p>
                 <label>
@@ -63,85 +65,93 @@
                     <span>Femenino</span>
                 </label>
             </div>
-    
+
             <div class="e-civil">
                 <label for="estado_civil">Estado civil</label>
-                <select name="estado_civil" id="estado_civil">
-                    <option value="">Seleccionar...</option>
-                    <option value="soltero">Soltero</option>
-                    <option value="Casado">Casado</option>
-                    <option value="Union_libre">Union libre</option>
-                    <option value="Viudo">Viudo(a)</option>
-                </select>
+                <div class="select">
+                    <select name="estado_civil" id="estado_civil">
+                        <option value="">Seleccionar...</option>
+                        <option value="soltero">Soltero</option>
+                        <option value="Casado">Casado</option>
+                        <option value="Union_libre">Union libre</option>
+                        <option value="Viudo">Viudo(a)</option>
+                    </select>
+                </div>
             </div>
-    
+
             <div class="ocupacion">
                 <label for="ocupacion">Estado civil</label>
-                <select name="ocupacion" id="ocupacion">
-                    <option value="">Seleccionar...</option>
-                    <option value="Auxiliar contable">Auxiliar contable</option>
-                    <option value="Enfermero">Enfermero</option>
-                    <option value="Bodeguero">Bodeguero</option>
-                    <option value="Chofer">Chofer</option>
-                    <option value="Pelotero">Pelotero</option>
-                </select>
+                <div class="select">
+                    <select name="ocupacion" id="ocupacion">
+                        <option value="">Seleccionar...</option>
+                        <option value="Auxiliar contable">Auxiliar contable</option>
+                        <option value="Enfermero">Enfermero</option>
+                        <option value="Bodeguero">Bodeguero</option>
+                        <option value="Chofer">Chofer</option>
+                        <option value="Pelotero">Pelotero</option>
+                    </select>
+                </div>
             </div>
-    
+
             <div class="t-sangre">
                 <label for="tipo_sangre">Tipo sangre</label>
-                <select name="tipo_sangre" id="tipo_sangre">
-                    <option value="">Seleccionar...</option>
-                    <option value="A+">A +</option>
-                    <option value="B+">B +</option>
-                    <option value="AB+">AB +</option>
-                    <option value="O+">O +</option>
-                    <option value="A-">A -</option>
-                    <option value="AB-">AB -</option>
-                    <option value="O-">O -</option>
-                </select>
+                <div class="select">
+                    <select name="tipo_sangre" id="tipo_sangre">
+                        <option value="">Seleccionar...</option>
+                        <option value="A+">A +</option>
+                        <option value="B+">B +</option>
+                        <option value="AB+">AB +</option>
+                        <option value="O+">O +</option>
+                        <option value="A-">A -</option>
+                        <option value="AB-">AB -</option>
+                        <option value="O-">O -</option>
+                    </select>
+                </div>
             </div>
-    
-            <div class="input">
+
+            <div class="input-control">
                 <label for="nacionalidad">Nacionalidad</label>
                 <input type="text" name="nacionalidad" id="nacionalidad">
             </div>
-    
+
             <div class="religion">
                 <label for="religion">Religion</label>
-                <select name="religion" id="religion">
-                    <option value="">Seleccionar...</option>
-                    <option value="Cristianismo">Cristianismo</option>
-                    <option value="Islam">Islam</option>
-                    <option value="Hinduismo">Hinduismo</option>
-                    <option value="Budismo">Budismo</option>
-                </select>
+                <div class="select">
+                    <select name="religion" id="religion">
+                        <option value="">Seleccionar...</option>
+                        <option value="Cristianismo">Cristianismo</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Hinduismo">Hinduismo</option>
+                        <option value="Budismo">Budismo</option>
+                    </select>
+                </div>
             </div>
-    
-            <div class="input">
+
+            <div class="input-control">
                 <label for="telefono">Telefono</label>
                 <input type="tel" name="telefono" id="telefono">
             </div>
-    
-            <div class="input">
+
+            <div class="input-control">
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email">
             </div>
-    
-            <div class="input">
+
+            <div class="input-control">
                 <label for="direccion">Direccion</label>
                 <input type="text" name="direccion" id="direccion" maxlength="100">
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="nombre_padre">Nombre del Padre</label>
                 <input type="text" name="nombre_padre" id="nombre_padre" maxlength="60">
             </div>
 
-            <div class="input">
+            <div class="input-control">
                 <label for="nombre_madre">Nombre de la madre</label>
                 <input type="text" name="nombre_madre" id="nombre_madre" maxlength="60">
             </div>
-    
+
             <div class="colegio-estudio">
                 <p>Tipo de colegio donde estudio</p>
                 <label>
@@ -157,26 +167,28 @@
                     <span>Publico</span>
                 </label>
             </div>
-    
+
             <div class="carrera">
                 <label for="carrera">Carrera</label>
-                <select name="carrera" id="carrera">
-                    <option value="">Seleccionar...</option>
-                    <option value="Contabilidad">Contabilidad</option>
-                    <option value="Ingeniero en Sistemas">Ingeniero en Sistemas</option>
-                    <option value="Magisterio">Magisterio</option>
-                    <option value="Derecho">Derecho</option>
-                    <option value="Mercadeo">Mercadeo</option>
-                    <option value="Medicina">Medicina</option>
-                    <option value="Administracion de empresas">Administracion de empresas</option>
-                </select>
+                <div class="select">
+                    <select name="carrera" id="carrera">
+                        <option value="">Seleccionar...</option>
+                        <option value="Contabilidad">Contabilidad</option>
+                        <option value="Ingeniero en Sistemas">Ingeniero en Sistemas</option>
+                        <option value="Magisterio">Magisterio</option>
+                        <option value="Derecho">Derecho</option>
+                        <option value="Mercadeo">Mercadeo</option>
+                        <option value="Medicina">Medicina</option>
+                        <option value="Administracion de empresas">Administracion de empresas</option>
+                    </select>
+                </div>
             </div>
-            
+
             <div class="observacion">
                 <label for="observaciones">Observaciones</label>
                 <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
             </div>
-    
+
             <div class="botones">
                 <button class="btn-enviar">Enviar</button>
                 <button class="btn-enviar" type="reset">Enviar</button>
@@ -185,4 +197,5 @@
         </form>
     </section>
 </body>
+
 </html>
