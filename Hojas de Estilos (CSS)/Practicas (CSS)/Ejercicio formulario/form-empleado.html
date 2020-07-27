@@ -22,8 +22,13 @@
 
 <body>
     <section>
-        <h1>Formulario de empleado</h1>
+        <div class="title">
+            <a href="javascript:history.back()" class="btn-link">Atras</a>
+            <h1>Formulario de empleado</h1>
+        </div>
+
         <form id="form-empleado" class="form-empleado">
+
             <div class="input-control">
                 <label for="codigo">Codigo</label>
                 <input type="text" name="codigo" id="codigo">
@@ -66,7 +71,7 @@
                 </label>
             </div>
 
-            <div class="e-civil">
+            <div class="e-civil mb-10">
                 <label for="estado_civil">Estado civil</label>
                 <div class="select">
                     <select name="estado_civil" id="estado_civil">
@@ -79,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="t-sangre">
+            <div class="t-sangre mb-10">
                 <label for="tipo_sangre">Tipo sangre</label>
                 <div class="select">
                     <select name="tipo_sangre" id="tipo_sangre">
@@ -100,7 +105,7 @@
                 <input type="text" name="nacionalidad" id="nacionalidad">
             </div>
 
-            <div class="religion">
+            <div class="religion mb-10">
                 <label for="religion">Religion</label>
                 <div class="select">
                     <select name="religion" id="religion">
@@ -133,7 +138,7 @@
                 <input type="number" name="salario_mensual" id="salario_mensual">
             </div>
 
-            <div class="departamento_perteneciente">
+            <div class="departamento_perteneciente mb-10">
                 <label for="departamento_perteneciente">Departamento perteneciente</label>
                 <div class="select">
                     <select name="departamento_perteneciente" id="departamento_perteneciente">
@@ -156,7 +161,7 @@
                 <input type="tel" name="telefono_contacto_emergencia" id="telefono_contacto_emergencia">
             </div>
 
-            <div class="afp">
+            <div class="afp mb-10">
                 <label for="afp_perteneciente">AFP perteneciente</label>
                 <div class="select">
                     <select name="afp_perteneciente" id="afp_perteneciente">
@@ -170,7 +175,7 @@
                 </div>
             </div>
 
-            <div class="ars">
+            <div class="ars mb-10">
                 <label for="ars_perteneciente">ARS perteneciente</label>
                 <div class="select">
                     <select name="ars_perteneciente" id="ars_perteneciente">
@@ -185,16 +190,16 @@
                 </div>
             </div>
 
-            <div class="observacion">
+            <div class="observacion mb-10">
                 <label for="observaciones">Observaciones</label>
                 <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
             </div>
 
             <div class="botones">
                 <button class="btn-enviar">Enviar</button>
-                <button class="btn-enviar" type="reset">Enviar</button>
+                <button class="btn-cancelar" type="reset">Cancelar</button>
             </div>
-            <output id="Message"></output>
+            <output id="Message" class="Message"></output>
         </form>
     </section>
 </body>

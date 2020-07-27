@@ -22,15 +22,18 @@
 
 <body>
     <section>
-        <h1>Formulario de Estudiante</h1>
+        <div class="title">
+            <a href="javascript:history.back()" class="btn-link">Atras</a>
+            <h1>Formulario de Estudiante</h1>
+        </div>
         <form id="form-estudiante" class="form-estudiante">
             <div class="input-control">
-                <label for="matricula">matricula</label>
+                <label for="matricula">Matricula</label>
                 <input type="text" name="matricula" id="matricula">
             </div>
 
             <div class="input-control">
-                <label for="cedula">cedula</label>
+                <label for="cedula">Cedula</label>
                 <input type="text" name="cedula" id="cedula">
             </div>
 
@@ -40,7 +43,7 @@
             </div>
 
             <div class="input-control">
-                <label for="fecha_ingreso">fecha_ingreso</label>
+                <label for="fecha_ingreso">Fecha_ingreso</label>
                 <input type="date" name="fecha_ingreso" id="fecha_ingreso">
             </div>
 
@@ -48,13 +51,12 @@
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" required maxlength="40">
             </div>
-
             <div class="input-control">
                 <label for="apellido">Apellido</label>
                 <input type="text" name="apellido" id="apellido" maxlength="40">
             </div>
 
-            <div class="genero">
+            <div class="genero mb-10">
                 <p>Genero</p>
                 <label>
                     <input type="radio" name="genero">
@@ -66,7 +68,7 @@
                 </label>
             </div>
 
-            <div class="e-civil">
+            <div class="e-civil mb-10">
                 <label for="estado_civil">Estado civil</label>
                 <div class="select">
                     <select name="estado_civil" id="estado_civil">
@@ -79,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="ocupacion">
+            <div class="ocupacion mb-10">
                 <label for="ocupacion">Estado civil</label>
                 <div class="select">
                     <select name="ocupacion" id="ocupacion">
@@ -93,7 +95,7 @@
                 </div>
             </div>
 
-            <div class="t-sangre">
+            <div class="t-sangre mb-10">
                 <label for="tipo_sangre">Tipo sangre</label>
                 <div class="select">
                     <select name="tipo_sangre" id="tipo_sangre">
@@ -108,13 +110,12 @@
                     </select>
                 </div>
             </div>
-
             <div class="input-control">
                 <label for="nacionalidad">Nacionalidad</label>
                 <input type="text" name="nacionalidad" id="nacionalidad">
             </div>
 
-            <div class="religion">
+            <div class="religion mb-10">
                 <label for="religion">Religion</label>
                 <div class="select">
                     <select name="religion" id="religion">
@@ -152,7 +153,7 @@
                 <input type="text" name="nombre_madre" id="nombre_madre" maxlength="60">
             </div>
 
-            <div class="colegio-estudio">
+            <div class="colegio-estudio mb-10">
                 <p>Tipo de colegio donde estudio</p>
                 <label>
                     <input type="radio" name="m-radio" value="Privado">
@@ -168,7 +169,7 @@
                 </label>
             </div>
 
-            <div class="carrera">
+            <div class="carrera mb-10">
                 <label for="carrera">Carrera</label>
                 <div class="select">
                     <select name="carrera" id="carrera">
@@ -184,16 +185,17 @@
                 </div>
             </div>
 
-            <div class="observacion">
+            <div class="observacion mb-10">
                 <label for="observaciones">Observaciones</label>
                 <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
             </div>
 
             <div class="botones">
                 <button class="btn-enviar">Enviar</button>
-                <button class="btn-enviar" type="reset">Enviar</button>
+                <button class="btn-cancelar" type="reset">Cancelar</button>
             </div>
-            <output id="Message"></output>
+            
+            <output id="Message" class="Message"></output>
         </form>
     </section>
 </body>

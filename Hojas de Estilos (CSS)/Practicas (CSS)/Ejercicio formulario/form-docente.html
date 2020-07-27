@@ -22,7 +22,11 @@
 
 <body>
     <section>
-        <h1>Formulario de docente</h1>
+        <div class="title">
+            <a href="javascript:history.back()" class="btn-link">Atras</a>
+            <h1>Formulario de docente</h1>
+        </div>
+
         <form id="form-docente" class="form-docente">
             <div class="input-control">
                 <label for="codigo">Codigo</label>
@@ -30,7 +34,7 @@
             </div>
 
             <div class="input-control">
-                <label for="cedula">cedula</label>
+                <label for="cedula">Cedula</label>
                 <input type="text" name="cedula" id="cedula">
             </div>
 
@@ -40,7 +44,7 @@
             </div>
 
             <div class="input-control">
-                <label for="fecha_ingreso">fecha_ingreso</label>
+                <label for="fecha_ingreso">Fecha_ingreso</label>
                 <input type="date" name="fecha_ingreso" id="fecha_ingreso">
             </div>
 
@@ -66,7 +70,7 @@
                 </label>
             </div>
 
-            <div class="e-civil">
+            <div class="e-civil mb-10">
                 <label for="estado_civil">Estado civil</label>
                 <div class="select">
                     <select name="estado_civil" id="estado_civil">
@@ -79,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="ocupacion">
+            <div class="ocupacion mb-10">
                 <label for="ocupacion">Estado civil</label>
                 <div class="select">
                     <select name="ocupacion" id="ocupacion">
@@ -93,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="t-sangre">
+            <div class="t-sangre mb-10">
                 <label for="tipo_sangre">Tipo sangre</label>
                 <div class="select">
                     <select name="tipo_sangre" id="tipo_sangre">
@@ -114,7 +118,7 @@
                 <input type="text" name="nacionalidad" id="nacionalidad">
             </div>
 
-            <div class="religion">
+            <div class="religion mb-10">
                 <label for="religion">Religion</label>
                 <div class="select">
                     <select name="religion" id="religion">
@@ -142,7 +146,7 @@
                 <input type="text" name="direccion" id="direccion" maxlength="100">
             </div>
 
-            <div class="carrera">
+            <div class="carrera mb-10">
                 <label for="carrera">Carrera</label>
                 <div class="select">
                     <select name="carrera" id="carrera">
@@ -161,8 +165,8 @@
                 <input type="number" name="Titutlo_grado" id="Titutlo_grado">
             </div>
 
-            <div class="input-control">
-                <label for="">Mayor Grado Académico Alcanzado</label>
+            <div class="academica mb-10">
+                <p>Mayor Grado Académico Alcanzado</p>
                 <label>
                     <input type="radio" name="m-radio" value="Licenciatura">
                     <span>Licenciatura</span>
@@ -181,7 +185,7 @@
                 </label>
             </div>
 
-            <div class="Categoría_profesoral">
+            <div class="Categoría_profesoral mb-10">
                 <label for="Categoría_profesoral">Categoría Profesoral </label>
                 <div class="select">
                     <select name="Categoría_profesoral" id="Categoría_rofesoral">
@@ -194,7 +198,7 @@
                 </div>
             </div>
 
-            <div class="facultad_perteneciente">
+            <div class="facultad_perteneciente mb-10">
                 <label for="facultad_perteneciente">Facultad a la que pertenece</label>
                 <div class="select">
                     <select name="facultad_perteneciente" id="facultad_perteneciente">
@@ -206,9 +210,9 @@
                 </div>
             </div>
 
-            <div class="asignaturas">
-                <div class="genero">
-                    <p>Asignaturas que impartes</p>
+            <div class="asignaturas mb-10">
+                <p>Asignaturas que impartes</p>
+                <div class="asig">
                     <label>
                         <input type="checkbox" name="Lenua y literatura">
                         <span>Lengua y literatura</span>
@@ -256,16 +260,16 @@
                 </div>
             </div>
 
-            <div class="observacion">
+            <div class="observacion mb-10">
                 <label for="observaciones">Observaciones</label>
                 <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
             </div>
 
-            <div class="botones">
+            <div class="botones mb-10">
                 <button class="btn-enviar">Enviar</button>
-                <button class="btn-enviar" type="reset">Enviar</button>
+                <button class="btn-cancelar" type="reset">Cancelar</button>
             </div>
-            <output id="Message"></output>
+            <output id="Message" class="Message"></output>
         </form>
     </section>
 </body>
