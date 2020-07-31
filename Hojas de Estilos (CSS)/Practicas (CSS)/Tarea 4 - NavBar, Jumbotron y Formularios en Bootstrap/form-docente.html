@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="theme-class" content="#000000" />
+    <meta name="msapplication-navbutton-class" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.87" />
+    <meta name="twitter:creator" content="@ingmorales54" />
+    <meta name="instagram:creator" content="@ingmorales1602" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="carPost" content="true" />
+    <meta name="author" content="Victor L Morales M" />
+    <meta name="copyright" content="Victor L Morales M" />
+    <title>Formulario de docente</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form-estudiante.html">Estudiantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form-docente.html">Docentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form-empleado.html">Empleado</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Practicas de tablas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Tabla Periodica</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Reproductores MP3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="title">
+            <a href="javascript:history.back()" class="btn-link">Atras</a>
+            <h1>Formulario de docente</h1>
+        </div>
+
+        <form id="form-docente" class="form-docente">
+            <div class="input-control">
+                <label for="codigo">Codigo</label>
+                <input type="text" name="codigo" id="codigo">
+            </div>
+
+            <div class="input-control">
+                <label for="cedula">Cedula</label>
+                <input type="text" name="cedula" id="cedula">
+            </div>
+
+            <div class="input-control">
+                <label for="fecha_naci">Fecha nacimiento</label>
+                <input type="date" name="fecha_naci" id="fecha_naci" required>
+            </div>
+
+            <div class="input-control">
+                <label for="fecha_ingreso">Fecha_ingreso</label>
+                <input type="date" name="fecha_ingreso" id="fecha_ingreso">
+            </div>
+
+            <div class="input-control">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required maxlength="40">
+            </div>
+
+            <div class="input-control">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" maxlength="40">
+            </div>
+
+            <div class="genero">
+                <p>Genero</p>
+                <label>
+                    <input type="radio" name="genero">
+                    <span>Masculino</span>
+                </label>
+                <label>
+                    <input type="radio" name="genero">
+                    <span>Femenino</span>
+                </label>
+            </div>
+
+            <div class="e-civil mb-10">
+                <label for="estado_civil">Estado civil</label>
+                <div class="select">
+                    <select name="estado_civil" id="estado_civil">
+                        <option value="">Seleccionar...</option>
+                        <option value="soltero">Soltero</option>
+                        <option value="Casado">Casado</option>
+                        <option value="Union_libre">Union libre</option>
+                        <option value="Viudo">Viudo(a)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="ocupacion mb-10">
+                <label for="ocupacion">Estado civil</label>
+                <div class="select">
+                    <select name="ocupacion" id="ocupacion">
+                        <option value="">Seleccionar...</option>
+                        <option value="Programador Web">Programador Web</option>
+                        <option value="Medico">Medico</option>
+                        <option value="Carpintero">Carpintero</option>
+                        <option value="Modista">Modista</option>
+                        <option value="MAgisterio">MAgisterio</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="t-sangre mb-10">
+                <label for="tipo_sangre">Tipo sangre</label>
+                <div class="select">
+                    <select name="tipo_sangre" id="tipo_sangre">
+                        <option value="">Seleccionar...</option>
+                        <option value="A+">A +</option>
+                        <option value="B+">B +</option>
+                        <option value="AB+">AB +</option>
+                        <option value="O+">O +</option>
+                        <option value="A-">A -</option>
+                        <option value="AB-">AB -</option>
+                        <option value="O-">O -</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-control">
+                <label for="nacionalidad">Nacionalidad</label>
+                <input type="text" name="nacionalidad" id="nacionalidad">
+            </div>
+
+            <div class="religion mb-10">
+                <label for="religion">Religion</label>
+                <div class="select">
+                    <select name="religion" id="religion">
+                        <option value="">Seleccionar...</option>
+                        <option value="Cristianismo">Cristianismo</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Hinduismo">Hinduismo</option>
+                        <option value="Budismo">Budismo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-control">
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono">
+            </div>
+
+            <div class="input-control">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="input-control">
+                <label for="direccion">Direccion</label>
+                <input type="text" name="direccion" id="direccion" maxlength="100">
+            </div>
+
+            <div class="carrera mb-10">
+                <label for="carrera">Carrera</label>
+                <div class="select">
+                    <select name="carrera" id="carrera">
+                        <option value="">Seleccionar...</option>
+                        <option value="Contabilidad">Contabilidad</option>
+                        <option value="Ingeniero en Sistemas">Ingeniero en Sistemas</option>
+                        <option value="Magisterio">Magisterio</option>
+                        <option value="Derecho">Derecho</option>
+                        <option value="Mercadeo">Mercadeo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-control">
+                <label for="Titutlo_grado">Titutlo de Carrera de Grado</label>
+                <input type="number" name="Titutlo_grado" id="Titutlo_grado">
+            </div>
+
+            <div class="academica mb-10">
+                <p>Mayor Grado Académico Alcanzado</p>
+                <label>
+                    <input type="radio" name="m-radio" value="Licenciatura">
+                    <span>Licenciatura</span>
+                </label>
+                <label>
+                    <input type="radio" name="m-radio" value="Ingenieria">
+                    <span>Ingenieria</span>
+                </label>
+                <label>
+                    <input type="radio" name="m-radio" value="Maestria">
+                    <span>Maestria</span>
+                </label>
+                <label>
+                    <input type="radio" name="m-radio" value="Doctorado">
+                    <span>Doctorado</span>
+                </label>
+            </div>
+
+            <div class="Categoría_profesoral mb-10">
+                <label for="Categoría_profesoral">Categoría Profesoral </label>
+                <div class="select">
+                    <select name="Categoría_profesoral" id="Categoría_rofesoral">
+                        <option value="">Seleccionar...</option>
+                        <option value="Provisional">Provisional</option>
+                        <option value="Adscrito">Adscrito</option>
+                        <option value="Adjunto">Adjunto</option>
+                        <option value="Titular">Titular</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="facultad_perteneciente mb-10">
+                <label for="facultad_perteneciente">Facultad a la que pertenece</label>
+                <div class="select">
+                    <select name="facultad_perteneciente" id="facultad_perteneciente">
+                        <option value="">Seleccionar...</option>
+                        <option value="Ingenieria">Ingenieria</option>
+                        <option value="Ciencias de la salud">Ciencias de la salud</option>
+                        <option value="Abogado">Abogado</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="asignaturas mb-10">
+                <p>Asignaturas que impartes</p>
+                <div class="asig">
+                    <label>
+                        <input type="checkbox" name="Lenua y literatura">
+                        <span>Lengua y literatura</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="asignatura">
+                        <span>Matematicas</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Historia">
+                        <span>Historia</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Formacion Humana">
+                        <span>Formacion Humana</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Ingles">
+                        <span>Ingles</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Calculo">
+                        <span>Calculo</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Etica Profecional">
+                        <span>Etica Profecional</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Fisica">
+                        <span>Fisica</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Contabilidad">
+                        <span>Contabilidad</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Informatica">
+                        <span>Informatica</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Estadistica">
+                        <span>Estadistica</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="observacion mb-10">
+                <label for="observaciones">Observaciones</label>
+                <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="botones mb-10">
+                <button class="btn-enviar">Enviar</button>
+                <button class="btn-cancelar" type="reset">Cancelar</button>
+            </div>
+            <output id="Message" class="Message"></output>
+        </form>
+    </section>
+</body>
+
+</html>
