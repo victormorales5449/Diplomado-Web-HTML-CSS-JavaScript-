@@ -17,12 +17,13 @@
     <meta name="author" content="Victor L Morales M" />
     <meta name="copyright" content="Victor L Morales M" />
     <title>Formulario de docente</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">UTECO</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,13 +31,13 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="form-estudiante.html">Estudiantes</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="form-docente.html">Docentes</a>
                 </li>
                 <li class="nav-item">
@@ -45,20 +46,19 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Practicas de tablas
+                        Tablas
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Tabla Periodica</a>
+                        <a class="dropdown-item" href="mitablaperiodica.html">Tabla Periodica</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Reproductores MP3</a>
+                        <a class="dropdown-item" href="reproductor-mp3.html">Reproductores MP3</a>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
-    <section>
+    <section class="mt-5">
         <div class="title">
-            <a href="javascript:history.back()" class="btn-link">Atras</a>
             <h1>Formulario de docente</h1>
         </div>
 
@@ -307,6 +307,9 @@
             <output id="Message" class="Message"></output>
         </form>
     </section>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
