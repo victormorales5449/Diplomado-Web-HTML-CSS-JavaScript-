@@ -2,12 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea</title>
+    <meta name="theme-class" content="#000000">
+    <meta name="msapplication-navbutton-class" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.87">
+    <meta name="twitter:creator" content="@ingmorales54">
+    <meta name="instagram:creator" content="@ingmorales1602">
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="carPost" content="true" />
+    <meta name="author" content="Victor L Morales M" />
+    <meta name="copyright" content="Victor L Morales M" />
+    <title>Reproductor mp3</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-        table {
+        .table {
             width: 559px;
             margin: auto;
         }
@@ -20,8 +32,16 @@
             text-align: center;
         }
 
-        h1 {
+        h1,
+        caption {
             text-align: center;
+        }
+
+        @media screen and (min-width: 800px) {
+
+            .table {
+                width: 700px;
+            }
         }
     </style>
 </head>
@@ -51,7 +71,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Practicas de tablas
+                        Tablas
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="mitablaperiodica.html">Tabla Periodica</a>
@@ -63,7 +83,7 @@
         </div>
     </nav>
     <h1 class="mt-5">Comparativa de reproductores MP3</h1>
-    <table>
+    <table class="table table-hover">
         <caption>Tabla comparativa de las caracteristicas tecnicas de los reproductores MP3</caption>
         <thead>
             <tr>
@@ -133,8 +153,7 @@
         </tbody>
     </table>
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
