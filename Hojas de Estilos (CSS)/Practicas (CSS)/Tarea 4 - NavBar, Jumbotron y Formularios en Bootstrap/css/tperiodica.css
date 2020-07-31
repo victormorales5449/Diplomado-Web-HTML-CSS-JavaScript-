@@ -17,11 +17,15 @@ table {
     position: relative;
 }
 
+td {
+    border: 1px solid;
+}
+
 /* Regla CSS para la descripcion */
 .c-element {
     position: absolute;
-    width: 74px;
-    height: 72px;
+    width: 90px;
+    height: 94px;
     border: 1px solid #ccc;
     top: 130px;
     left: 500px;
@@ -38,7 +42,7 @@ table {
 }
 
 .c-element .element span:nth-child(1) {
-    margin-right: 8px;
+    margin-right: 15px;
 }
 
 .c-element .element span:nth-child(1)::before,
@@ -56,7 +60,7 @@ table {
 .c-element .element span:nth-child(1)::after,
 .c-element .element span:nth-child(2)::after,
 .c-element .element div:nth-child(3)::after,
-.c-element .element div:nth-child(4)::after{
+.c-element .element div:nth-child(4)::after {
     position: absolute;
     font-size: 15px;
 }
@@ -69,7 +73,7 @@ table {
 
 .c-element .element span:nth-child(1)::after {
     content: "Número Atómico";
-    left: -155px;
+    left: -164px;
     top: -53px;
     width: 121px;
 }
@@ -82,29 +86,29 @@ table {
 
 .c-element .element span:nth-child(2)::after {
     content: "Masa Atómica Relativa";
-    right: -155px;
+    right: -205px;
     top: -53px;
-    width: 121px;
+    width: 160px;
 }
 
 .c-element .element div:nth-child(3)::before {
-   left: -34px;
-   top: 41px;
+    left: -34px;
+    top: 47px;
 }
 
 .c-element .element div:nth-child(3)::after {
     content: "Símbolo Quimico";
-    left: -155px;
+    left: -162px;
 }
 
 .c-element .element div:nth-child(4)::before {
     right: -42px;
-    top: 64px;
+    top: 74px;
 }
 
 .c-element .element div:nth-child(4)::after {
     content: "Nombre del Elemento";
-    right: -185px;
+    right: -195px;
     width: 150px;
 }
 
@@ -115,11 +119,16 @@ table {
 .c-element .element span:nth-child(1) {
     margin-right: 8px;
 }
-/* Fin de la regla css para la descripcion */
 
+/* Fin de la regla css para la descripcion */
 caption {
+    text-align: center;
+}
+
+h1 {
     font-size: 30px;
     color: blue;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -131,10 +140,6 @@ tr td div:nth-child(3) {
 
 tr {
     text-align: center;
-}
-
-td {
-    border: 1px solid #ccc;
 }
 
 td:first-child {
@@ -161,12 +166,12 @@ td:first-child {
 }
 
 .grupo td:nth-child(n+4) {
-    bottom: -196px;
+    bottom: -243px;
 }
 
 .grupo td:nth-child(3),
 .grupo td:nth-child(n+14) {
-    bottom: -60px;
+    bottom: -77px;
 }
 
 .grupo td:nth-child(19) {
