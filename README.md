@@ -1,4 +1,4 @@
-# Diplomado_web
+# Diplomado-Web-HTML-CSS-JavaScript-
 
 Este es un repositorio para todoas las actividades del Diplomado web
 
