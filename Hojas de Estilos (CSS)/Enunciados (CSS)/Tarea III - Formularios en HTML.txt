@@ -1,0 +1,2 @@
+Utilizar el documento anexo para realizar los formularios con los campos y etiquetas que se especifican en el mismo.  Haga un documento HTML  por cada tabla y luego colóquelo en un solo archivo comprimido en este apartado.
+
