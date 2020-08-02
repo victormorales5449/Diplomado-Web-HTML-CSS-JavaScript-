@@ -100,7 +100,7 @@ fieldset {
     color: #000;
 }
 
-.title{
+.title {
     display: flex;
     justify-content: center;
     width: 380px;
@@ -118,8 +118,8 @@ fieldset {
     padding: 6px 10px;
 }
 
-.btn-link:hover{
-    background-color: var(--color2a);    
+.btn-link:hover {
+    background-color: var(--color2a);
 }
 
 .input-control {
@@ -194,10 +194,11 @@ fieldset {
 }
 
 .botones {
+    position: relative;
     text-align: center;
 }
 
-.asig{
+.asig {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
@@ -217,7 +218,15 @@ fieldset {
         width: 800px;
     }
 
-    .btn-link{
+    .btn-link {
         left: 13px;
+    }
+
+    .post {
+        top: -125px;
+    }
+
+    .posb{
+        top: 50px;
     }
 }
