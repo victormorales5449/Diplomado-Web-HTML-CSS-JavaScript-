@@ -3,9 +3,9 @@ echo "# diplomado_web" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin https://github.com/victormorales5449/diplomado_web.git
+git remote add origin https://github.com/victormorales5449/Diplomado-Web-HTML-CSS-JavaScript-.git
 git push -u origin master
 
 …or push an existing repository from the command line
-git remote add origin https://github.com/victormorales5449/diplomado_web.git
+git remote add origin https://github.com/victormorales5449/Diplomado-Web-HTML-CSS-JavaScript-.git
 git push -u origin master
