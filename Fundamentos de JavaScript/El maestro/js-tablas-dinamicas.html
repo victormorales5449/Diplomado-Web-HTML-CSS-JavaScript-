@@ -7,24 +7,30 @@
 </head>
 <body>
     
-    <label for="cols">Columnas</label>
-    <input type="number" name="cols" id="cols">
-    <br>
-    <label for="filas">Filas</label>
-    <input type="number" name="filas" id="filas">
-    <br>
-    <input type="button" value="Generar Tabla" onclick="generarTabla()">
-    <div id="tabla">
+    <div>
+        <label for="cols">Columnas</label>
+        <input type="number" name="cols" id="cols">
     </div>
+    
+    <div>
+        <label for="filas">Filas</label>
+        <input type="number" name="filas" id="filas">
+    </div>
+    
+    <div>
+        <input type="button" value="Generar Tabla" onclick="generarTabla()">
+    </div>
+
+    <div id="tabla"></div>
 
     <script>
         function generarTabla()
         {
-            var filas = document.getElementById("filas").value;
-            var cols = document.getElementById("cols").value;
-            var html = "<table border='1'><tbody>";
-            var htmlRow = "";
-            var htmlCol = "";
+            const filas = document.getElementById("filas").value;
+            const cols = document.getElementById("cols").value;
+            let html = "<table border='1'></tbody>";
+            let htmlRow = "";
+            let htmlCol = "";
             for(x=1; x<=parseInt(filas); x++)
             {
                 htmlRow += "<tr>"
@@ -38,9 +44,7 @@
             html+= htmlRow;
             html+="</tbody></table>";
             document.getElementById("tabla").innerHTML = html;
-
         }
-
     </script>
 </body>
 </html>

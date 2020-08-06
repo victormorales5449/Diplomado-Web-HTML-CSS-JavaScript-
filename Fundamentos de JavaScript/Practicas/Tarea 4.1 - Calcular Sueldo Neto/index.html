@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo del Sueldo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <form class="form">
+        <fieldset>
+            <legend>Calcular el sueldo</legend>
+            
+            <div class="form-group">
+                <label for="sueldo_bruto">Sueldo Bruto</label>
+                <input type="text" class="form-control" id="sueldo_bruto" aria-describedby="emailHelp"
+                    placeholder="Ejemplo: $RD10,000.00">
+                <small id="messageHelp" class="form-text text-muted"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="afp">AFP</label>
+                <input type="text" class="form-control" id="afp" placeholder="2.87% Ej: $RD287.00">
+            </div> 
+            
+            <div class="form-group">
+                <label for="afp">AFP</label>
+                <input type="text" class="form-control" id="afp" placeholder="2.87% Ej: $RD287.00">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Calcular</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sueldo.js"></script>
 </body>
 </html>
