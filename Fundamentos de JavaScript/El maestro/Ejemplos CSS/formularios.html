@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Diplomado HTML5 - Formularios y Controles</title>
+        <style>
+            label{
+                width:120px;
+                margin-right: 5px;
+                float:left;
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="get" action="formularios.html">
+            <input type="hidden" id="formulario" value="estudiantes"/>
+            <fieldset>
+                <legend>Datos del Estudiante</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" maxlength="30" name="nombre"/> 
+                <br/>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" maxlength="30" name="apellido"/>
+                <br/>
+                <label for="apellido">Carrera:</label>
+                <input type="text" id="carrera" maxlength="30" name="carrera"/>
+                <br/>
+                <label>Sexo</label>
+                <input type="radio" name="sexo" value="Masculino"/> Masculino
+                <input type="radio" name="sexo" value="Femenino"/> Femenino
+                <br/>
+                <label>Ciudad de Origen</label>
+                <select id="Ciudad" name="Ciudad">
+                    <option value="1" >San Francisco de Macorís</option>
+                    <option value="2">Tenares</option>
+                    <option value="3" selected="selected">Cotuí</option>
+                </select>
+                <br/>
+                
+                <label>Posibles Horarios</label>
+                <input type="checkbox" id="nocturno" value="Nocturno"/>Nocturno
+                <input type="checkbox" id="diurno" value="Diurno"/>Diurno
+                <input type="checkbox" id="vespertino" value="Vespertino"/>Vespertino
+                <input type="checkbox" id="matutino" value="Matutino"/>Matutino
+                <br/>
+                
+                <label>Observaciones</label>
+                <textarea rows="10" cols="50" id="observaciones"></textarea>
+                <br/>
+                
+                
+                <input type="submit" id="enviar" value="Enviar"/>
+                <input type="reset" id="limpiar" value="Limpiar Todo"/>
+            </fieldset>
+            <br/>
+            <a href="http://validator.w3.org/check?uri=http://njabreu.com/html5/formularios.html">Validar HTML</a>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+            </a>
+            </p>
+        </form>
+    </body>
+</html>

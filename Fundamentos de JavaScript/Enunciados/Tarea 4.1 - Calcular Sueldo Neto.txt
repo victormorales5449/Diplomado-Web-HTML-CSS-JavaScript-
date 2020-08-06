@@ -1,0 +1,19 @@
+Crear una página de HTML que utilice Bootstrap para desarrollar la interfaz del usuario.
+
+La página debe pedir el sueldo bruto de una persona y luego utilizar javascript para calcular 
+el sueldo neto utilizando el siguiente formato:
+
+Sueldo Bruto	
+Introduzca el sueldo bruto
+ARS	3.04%
+AFP	2.87%
+IRS	15%
+Total Descuentos	
+Sueldo Neto
+
+
+
+
+
+api publica
+http://www.omdbapi.com/?i=tt3896198&apikey=aba6b3af

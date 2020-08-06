@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Select All Radio Button</title>
+<script src="js/jquery-3.5.1.slim.min.js" ></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		// evento click del bot�n btnToo
+   		$("#btnTodo").click(function() {
+			  $("#radio-area input[type='radio']").attr("checked", true ); // marca como checked todos los radio dentro del div con ID: radio-area
+		});
+
+		// evento click del bot�n nada
+   		$("#btnNada").click(function() {
+			  $("#radio-area input[type='radio']").attr("checked", false ); // marca como checked todos los radio dentro del div con ID: radio-area
+		});
+
+   		$("#btnNada1").click(function() {
+			$('.opciones').each(function() { //verifica cada checkbox
+					this.checked = false; //deselecciona todo los checkboxes con clase opciones
+			});
+
+		});
+    	$('#btnTodo1').click(function() {  //en el evento click del boton btnTodo1
+				$('.opciones').each(function() { //verifica cada checkbox
+					this.checked = true;  //coteja todos los checkboxes con clase opciones
+				});
+		});
+    });
+</script>
+</head>
+<body>
+<div id="radio-area">
+	<!-- no se le coloc� el name com�n para poder desarrollar el ejemplo -->
+	<input name="Casado" id="Casado" type="radio" value="Casado" title="Casado"/>
+	<label for="Casado">Casado</label>
+	<br />
+	<input name="Soltero" id="Soltero" type="radio" value="Soltero" title="Soltero"/>
+	<label for="Soltero">Soltero</label>
+	<br />
+	<input name="Divorciado" id="Divorciado" type="radio" value="Divorciado" title="Divorciado"/>
+	<label for="Divorciado">Casado</label>
+	<br />
+	<input type="button" value="Seleccionar Todo" width="100px" id="btnTodo"/>
+	<input type="button" value="Seleccionar Nada" width="100px" id="btnNada"/>
+</div>
+
+<form id="myform">
+  <ul>
+  	<li>
+		<input name="cCasado" id="cCasado" type="checkbox" value="Casado" title="Casado" class="opciones"/>
+		<label for="cCasado">Casado</label>
+	</li>
+	<li>
+		<input name="cSoltero" id="cSoltero" type="checkbox" value="Soltero" title="Soltero" class="opciones"/>
+		<label for="cSoltero">Soltero</label>
+	</li>
+	<li>
+		<input name="cDivorciado" id="cDivorciado" type="checkbox" value="Divorciado" title="Divorciado" class="opciones"/>
+		<label for="cDivorciado">Casado</label>
+	</li>
+ </ul>
+	<input type="button" value="Seleccionar Todo" width="100px" id="btnTodo1"/>
+	<input type="button" value="Seleccionar Nada" width="100px" id="btnNada1"/>
+</form>
+
+</body>
+</html>

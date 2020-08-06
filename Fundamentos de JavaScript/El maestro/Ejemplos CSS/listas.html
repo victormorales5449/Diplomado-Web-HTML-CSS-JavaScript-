@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <style type="text/css">
+            .lista
+            {
+                list-style-image:url("img/city-icon.png"); /* Cambia la Imagen de la vineta*/
+            }
+            .menu li
+            { 
+                outline-color: Gray;
+                list-style-type:none;
+                list-style-image: none;
+                text-align: center;
+                color: White;
+                background-color: Blue;
+                width: 110px;
+                border-radius: 5px;
+                display: block;
+                float: left; 
+                margin: 5px;
+                font-family: "Trebuchet MS", arial, verdana, sans-serif;
+                font-size: 18px;
+				border-right:1px;
+				border-right-color:#FFFFFF;
+				border-left-style:solid;
+            }
+            .menu li:hover
+            {
+                background-color: Green;
+                color: White;
+            }
+            .menu li a:visited
+            {
+                text-decoration: none;
+                color:White;
+            }
+            .menu li a:active
+            {
+                color: White;
+            }
+            .menu li a:link
+            {
+                color: White;
+                text-decoration: none;
+            }
+            
+            dt
+            {
+                font-weight: bold;
+            }
+            dd
+            {
+              width: 550px;  
+            text-align: justify;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+		
+		 <ul class="menu">
+          <li><a href="#provincias">Provincias</a></li>  
+          <li><a href="#ciudades">Ciudades</a></li>    
+          <li><a href="#sectores">Sectores</a></li>    
+          <li><a href="#definiciones">Definiciones</a></li>      
+          <li><a href="#dialogo">Diálogo</a></li> 
+        </ul>
+		
+        <br/>
+        <p></p>
+        
+            <strong>Provincias de la República Dominicana:</strong>
+            <ul id="provincias">
+                <li>Duarte</li>
+                <li>Sánchez Ramírez</li>
+                <li>Monseñor Nouel</li>
+                <li>Dajabón</li>
+                <li>Santo Domingo</li>
+                <li>María Trinidad Sánchez</li>
+            </ul>
+         <br/>
+
+            <strong>Municipios de la Provincia Duarte:</strong>
+            <ul class="lista" id="ciudades">
+                <li>San Francisco de Macorís</li>
+                <li>Cenoví</li>
+                <li>Las Guáranas</li>
+                <li>Villa Rivas</li>
+                <li>Pimentel</li>
+                <li>Castillo</li>
+            </ul>
+        
+        <strong>San Francisco de Macorís está compuesto de los siguientes sectores o barrios</strong>
+        <ol id="sectores">
+            <li>Centro de la Ciudad</li>
+            <li>Pueblo Nuevo</li>
+            <li>Capotillo</li>
+            <li>Los Rieles</li>
+            <li>Capacito</li>
+            <li>Las Flores</li>
+            <li>Ventura Grullón</li>
+            <li>Espínola</li>
+            <li>Neftalí</li>
+            <li>Urb. Piña III</li>
+        </ol>
+        
+            <strong>Definiciones</strong>
+            <dl id="definiciones">
+                <dt>Provincia</dt>
+                <dd>Comúnmente, una provincia es una entidad subnacional por lo general inmediatamente inferior al Estado.</dd>
+                <dt>Ciudad</dt>
+                <dd>
+                    Una ciudad es un área urbana con alta densidad de población en la que predominan fundamentalmente la industria y los servicios. 
+                    Se diferencia de otras entidades urbanas por diversos criterios, entre los que se incluyen población, densidad poblacional
+                    o estatuto legal, aunque su distinción varía entre países. La población de una ciudad puede variar entre unas pocas
+                    centenas de habitantes hasta una decena de millones de habitantes. Las ciudades son las áreas más densamente pobladas 
+                    del mundo, por ejemplo São Paulo con sus cerca de 20 millones de habitantes1 tiene una densidad poblacional 
+                    aproximadamente 7.160 habitantes por kilómetro cuadrado, mientras que todo Brasil posee poco más de 22 hab/km.
+                </dd>
+                <dt>Barrio</dt>
+                <dd>Barrio es toda subdivisión con identidad propia de una ciudad, pueblo o parroquia. 
+                    Su origen puede ser una decisión administrativa (en cuyo caso equivale a un distrito), una iniciativa urbanística 
+                    (p. ej. el conjunto de casas que una empresa construye para los obreros de una de sus fábricas) o, simplemente, 
+                    un sentido común de pertenencia de sus habitantes basado en la proximidad o historia, y muchas veces reforzado
+                    por el antagonismo con otro barrio contigüo. Es importante no confundir con "vecindario",
+                    puesto que éste último implica "condicion de vecino" o de proximidad más directa, por ejemplo, 
+                    en el barrio de Gracia, en Barcelona, las vecindades estarían definidas por cada una 
+                    de sus plazas o calles principales (y que a su vez pueden confirmarse por la existencia de distintas asociaciones de vecinos).
+                </dd>
+            </dl>
+
+            <strong>Diálogo</strong>
+            <dialog id="dialogo">
+              <dt>¿Qué es una Provincia?</dt>
+                <dd>Comúnmente, una provincia es una entidad subnacional por lo general inmediatamente inferior al Estado.</dd>
+                <dt>¿Qué es una Ciudad?</dt>
+                <dd>
+                    Una ciudad es un área urbana con alta densidad de población en la que predominan fundamentalmente la industria y los servicios. 
+                    Se diferencia de otras entidades urbanas por diversos criterios, entre los que se incluyen población, densidad poblacional
+                    o estatuto legal, aunque su distinción varía entre países. La población de una ciudad puede variar entre unas pocas
+                    centenas de habitantes hasta una decena de millones de habitantes. Las ciudades son las áreas más densamente pobladas 
+                    del mundo, por ejemplo São Paulo con sus cerca de 20 millones de habitantes1 tiene una densidad poblacional 
+                    aproximadamente 7.160 habitantes por kilómetro cuadrado, mientras que todo Brasil posee poco más de 22 hab/km.
+                </dd>
+                <dt>¿Qué es un Barrio?</dt>
+                <dd>Barrio es toda subdivisión con identidad propia de una ciudad, pueblo o parroquia. 
+                    Su origen puede ser una decisión administrativa (en cuyo caso equivale a un distrito), una iniciativa urbanística 
+                    (p. ej. el conjunto de casas que una empresa construye para los obreros de una de sus fábricas) o, simplemente, 
+                    un sentido común de pertenencia de sus habitantes basado en la proximidad o historia, y muchas veces reforzado
+                    por el antagonismo con otro barrio contigüo. Es importante no confundir con "vecindario",
+                    puesto que éste último implica "condicion de vecino" o de proximidad más directa, por ejemplo, 
+                    en el barrio de Gracia, en Barcelona, las vecindades estarían definidas por cada una 
+                    de sus plazas o calles principales (y que a su vez pueden confirmarse por la existencia de distintas asociaciones de vecinos).
+                </dd>  
+            </dialog>
+
+        <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+        </a>
+        </p>
+        <p>
+            La validación de HTML5 no pasa, siempre presenta el siguiente error: Element dialog not allowed as child of element body in this context. (Suppressing further errors from this subtree.)<br/>
+            Específicamente en el tag dialog
+        </p>
+    </body>
+</html>

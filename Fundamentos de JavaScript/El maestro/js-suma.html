@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Suma de 2 Números</h1>
+    <label for="a">Digite el valor de a</label>
+    <input type="number" name="a" id="a">
+    <br>
+    <label for="b">Digite el valor de b</label>
+    <input type="number" name="b" id="b">
+    <br>
+    <label for="total">Total</label>
+    <input type="number" name="total" id="total" disabled>
+    <br>
+    <input type="button" value="Calcular" onclick="suma()">
+
+     <script>
+         function suma()
+         {
+             var a = document.getElementById("a").value;
+             var b = document.getElementById("b").value;
+             document.getElementById("total").value = parseInt(a) + parseInt(b);
+         }
+     </script>
+
+</body>
+</html>

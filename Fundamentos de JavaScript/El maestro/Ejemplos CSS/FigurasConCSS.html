@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+	#circulo
+	{ 
+	   width: 140px;
+	   height: 140px;
+	   background: blue; 
+	   -moz-border-radius: 70px; 
+	   -webkit-border-radius: 70px; 
+	   border-radius: 70px;
+	}
+	#oval 
+	{
+	   width: 200px; 
+	   height: 100px; 
+	   background: blue; 
+	   -moz-border-radius: 100px / 50px; 
+	   -webkit-border-radius: 100px / 50px; 
+	   border-radius: 100px / 50px;
+	}
+	
+	#triangulo-arriba{
+   width: 0; 
+   height: 0; 
+   border-bottom: 120px solid blue; 
+   border-left: 60px solid transparent; 
+   border-right: 60px solid transparent; 
+}
+#triangulo-abajo{ 
+   width: 0; 
+   height: 0;
+   border-top: 120px solid blue;
+   border-left: 60px solid transparent; 
+   border-right: 60px solid transparent; 
+}
+#triangulo-izquierda {
+   width: 0;
+   height: 0;
+   border-right: 100px solid blue;
+   border-top: 50px solid transparent;
+   border-bottom: 50px solid transparent;
+}
+#triangulo-derecha{
+   width: 0;
+   height: 0;
+   border-left: 100px solid blue;
+   border-top: 50px solid transparent;
+   border-bottom: 50px solid transparent;
+}
+#corazon { 
+	position: relative;
+}
+#corazon:before, #corazon:after {
+	position: absolute;
+  content: "";
+	left: 70px; top: 0;
+	width: 70px;
+	height: 115px;
+	background: blue;
+	-moz-border-radius: 50px 50px 0 0;
+	border-radius: 50px 50px 0 0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+}
+#corazon:after { 
+	left: 0; 
+	-webkit-transform: rotate(45deg); 
+	-moz-transform: rotate(45deg); 
+	-ms-transform: rotate(45deg); 
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	transform-origin :100% 100%;
+}
+</style>
+<title>Untitled Document</title>
+</head>
+<div id="circulo"></div>
+<div id="oval"></div>
+<div id="triangulo-arriba"></div>
+<br />
+<div id="triangulo-abajo"></div>
+<Br />
+<div id="triangulo-izquierda"></div>
+<div id="triangulo-derecha"></div>
+<div id="corazon"></div>
+<body>
+</body>
+</html>

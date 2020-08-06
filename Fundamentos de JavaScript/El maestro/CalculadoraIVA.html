@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+ <head>
+   <title>Calculadora del IVA</title>
+   <script type="text/javascript" src="js/iva.js"></script>
+   <style type="text/css">
+	   body {
+		   font-family:Verdana, Arial, sans-serif;
+		   background:#333;
+		}
+		#content {
+		   width:430px;
+		   margin:20px auto;
+		   padding:5px 20px;
+		   background:#fff;
+		   border:1px solid #000;
+		}
+		#content h1 {
+		   color:#333;
+		}
+		#calculadora_iva label {
+		   display:block;
+		   width:200px;
+		   text-align:right;
+		   padding-right:20px;
+		   float:left;
+		}
+		#calculadora_iva input {
+		   display:block;
+		   float:left;
+		   margin-right:10px;
+		}
+		#calculadora_iva br {
+		   clear:both;
+		   margin-bottom:10px;
+		}
+	</style>   
+
+</head>
+
+<body>
+<div id="content">
+   <h1>Calculadora del IVA</h1>
+   <p>Introduce un valor y pulsa "Calcular".</p>
+   <div id="calculadora_iva">
+      <label for="subtotal">Subtotal:</label>
+      <input type="text" id="subtotal"/><br/>
+      
+      <label for="porcentaje_iva">% IVA:</label>
+      <input type="text" id="porcentaje_iva"/> %<br/>
+      
+      <label for="total"> Total:</label>
+      <input type="text" id="total" disabled="disabled"/><br/>
+      
+      <label for="iva_venta">IVA:</label>
+      <input type="text" id="iva_venta" disabled="disabled"/><br/>
+      
+      <label>&nbsp;</label>
+      <input type="button" id="calcular" value="Calcular"/><br/>
+	  <br />
+   </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Elemento un Select</title>
+</head>
+
+<body>
+    <input type="text" name="valor" id="valor"> &nbsp;
+    <input type="button" value="Agregar" name="boton" id="boton" onclick="agregar()">
+    &nbsp;
+    <input type="button" value="Eliminar" name="delBoton" id="delBoton" onclick="eliminar()">
+    <br>
+    <script>
+        document.writeln("Probando");
+        console.log("Probando en la consola");
+    </script>
+    <select id="listado" size="5" style="width: 200px;">
+    </select>
+    <script>
+        function agregar() {
+            var x = document.getElementById("listado");
+            var valor = document.getElementById("valor").value;
+            if(valor.trim().length>0)
+            {
+                var option = document.createElement("option");
+                option.text = valor;
+                x.add(option);
+            }
+        }
+        function eliminar()
+        {
+            var valor = document.getElementById("valor").value;
+            var selectobject = document.getElementById("listado");
+            for (var i = 0; i < selectobject.length; i++) {
+                if (selectobject.options[i].value == valor)
+                    selectobject.remove(i);
+            }
+        }
+    </script>
+</body>
+
+</html>

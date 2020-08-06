@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Canvas</title>
+</head>
+<body>
+    <canvas id="otroCanvas" width="200" height="100" style="border:1px solid blue;"></canvas>
+
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+
+    <canvas id="circulo" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+      </svg>
+
+
+      <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+        <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+        <g>
+         <title>background</title>
+         <rect fill="#fff" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+         <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+          <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+         </g>
+        </g>
+        <g>
+         <title>Layer 1</title>
+         <path d="m124.5,151c-10,5 -18.10075,11.28235 -23,20c-5.27666,9.38919 -9.59537,22.74165 -3,49c7.19771,28.65646 18.98122,46.53476 41,62c25.99377,18.25714 68.21899,25.4342 113,21c35.51944,-3.51712 64.31335,-14.49469 73,-42c12.6521,-40.06151 -4.48892,-88.9384 -31,-139c-15.45096,-29.17649 -44.44186,-56.91813 -117,-65c-75.53943,-8.41394 -145.18895,11.96928 -197,22c-28.11361,5.44286 -37,12 -34,17l12,10" id="svg_1" stroke-width="1.5" stroke="#000" fill="none"/>
+         <rect id="svg_2" height="162" width="301" y="149" x="361.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+        </g>
+       </svg>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+
+        var c = document.getElementById("circulo");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+
+    </script>
+</body>
+
+</html>

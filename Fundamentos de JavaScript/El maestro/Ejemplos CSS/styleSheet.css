@@ -1,0 +1,91 @@
+a:link, visited
+{
+    color: green; 
+    text-decoration: none;
+}
+a:hover
+{
+   color:green;
+   text-decoration: underline overline; 
+}
+
+
+body {
+    font-family: verdana, sans-serif;
+    font-size: 11px;
+}
+
+h1
+{
+    color:Blue;
+}
+
+h2
+{
+    color:Gray;
+}
+
+h3
+{
+    color:Red;
+}
+h3 a:link
+{
+   color: Maroon;
+   text-decoration: none;
+}
+h3 a:visited
+{
+   color: Maroon;
+   text-decoration: none;
+}
+h3 a:hover
+{
+   color: Maroon;
+   text-decoration: underline;
+}
+h3 a:active
+{
+   color: Maroon;
+   text-decoration: none;
+}
+
+p
+{
+  width: 600px;  
+}
+
+.parrafo1
+{
+   text-align:left;
+   width: 600px;
+}
+.parrafo2 
+{
+   text-align:justify;
+    width: 600px;
+}
+.parrafo3
+{
+   text-align:right;
+   width: 600px;
+}
+.parrafo4
+{
+   text-align:center;
+   width: 600px;
+}
+
+@font-face
+{
+   font-family: MiFont;
+   src:url("fonts/OldeEnglish.ttf");	
+}
+
+#navegadores
+{
+    font-family: MiFont, verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+

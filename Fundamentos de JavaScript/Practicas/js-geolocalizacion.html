@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalización</title>
+</head>
+
+<body>
+    <p>Click al botón para obtener sus coordenadas.</p>
+
+    <button onclick="getLocation()">Inténtalo..</button>
+
+    <p id="demo"></p>
+    <div id="mapholder" style="width: 400px; height:400px;"></div>
+    <script>
+
+        //https://www.w3schools.com/html/html5_geolocation.asp
+        
+        var x = document.getElementById("demo");
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Este navegador no soporte geolocalización.";
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitud: " + position.coords.latitude +
+                "<br>Longitud: " + position.coords.longitude;
+        }
+
+        function showPosition2(position) {
+            var latlon = position.coords.latitude + "," + position.coords.longitude;
+            var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
+            document.getElementById("mapholder").innerHTML = "<img src='" + img_url + "'>";
+        }
+
+    </script>
+</body>
+
+</html>

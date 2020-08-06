@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Elemento un Select</title>
+</head>
+
+<body>
+    <input type="button" value="Agregar" name="boton" id="boton" onclick="agregar()">
+    <br>
+    <select id="listado" size="5" style="width: 200px;">
+    </select>
+    <script>
+        function agregar() {
+            var x = document.getElementById("listado");
+            for (i = 1; i <= 100; i++) {
+                var option = document.createElement("option");
+                option.text = i;
+                x.add(option);
+            }
+        }
+    </script>
+</body>
+
+</html>

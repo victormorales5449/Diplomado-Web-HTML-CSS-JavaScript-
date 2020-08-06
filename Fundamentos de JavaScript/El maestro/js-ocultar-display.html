@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar o Ocultar como reacción</title>
+</head>
+<body>
+    <h1>Mostar o ocultar como reacción</h1>
+    <form action="">
+      Especifique un precio 
+      <input type="number" name="precio1" id="precio1" max="100" min="1" oninput="check_range();">
+      <p style="display: none;">
+        Advertencia; se encuentra al 20% de su límite.
+      </p>
+    </form>
+    <script>
+        function check_range()
+        {
+            var valor = document.getElementById("precio1").value;
+            var paragraph_list = document.getElementsByTagName("p");
+            var primer_parrafo =  paragraph_list[0];
+            if(valor>=80)
+            {
+                display = "block";
+            }
+            else
+            {
+                display = "none";
+            }
+            primer_parrafo.style.display = display;
+        }
+    </script>
+</body>
+</html>

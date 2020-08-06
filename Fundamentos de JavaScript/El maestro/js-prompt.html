@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click al botón para ver la caja prompt.</p>
+
+    <button onclick="myFunction()">Probar</button>
+    
+    <p id="demo">
+    </p>
+    
+    <script>
+    function myFunction() {
+      var person = prompt("Por favor introduzca su nombre", "UTECO");
+      if (person != null) {
+        document.getElementById("demo").innerHTML = "Hola " + person + "! ¿Cómo estás hoy?";
+      }
+    }
+    </script>
+    
+</body>
+</html>

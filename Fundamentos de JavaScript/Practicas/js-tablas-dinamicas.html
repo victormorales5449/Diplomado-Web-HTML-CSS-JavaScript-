@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas Dinámicas con Js</title>
+</head>
+<body>
+    
+    <div>
+        <label for="cols">Columnas</label>
+        <input type="number" name="cols" id="cols">
+    </div>
+    
+    <div>
+        <label for="filas">Filas</label>
+        <input type="number" name="filas" id="filas">
+    </div>
+    
+    <div>
+        <input type="button" value="Generar Tabla" onclick="generarTabla()">
+    </div>
+
+    <div id="tabla"></div>
+
+    <script>
+        function generarTabla()
+        {
+            const filas = document.getElementById("filas").value;
+            const cols = document.getElementById("cols").value;
+            let html = "<table border='1'></tbody>";
+            let htmlRow = "";
+            let htmlCol = "";
+            for(x=1; x<=parseInt(filas); x++)
+            {
+                htmlRow += "<tr>"
+                for(y=1; y<=parseInt(cols); y++)
+                {
+                    htmlCol += "<td>" + x + ","+ y +"</td>"
+                }
+                htmlRow += htmlCol + "</tr>"
+                htmlCol = "";
+            }
+            html+= htmlRow;
+            html+="</tbody></table>";
+            document.getElementById("tabla").innerHTML = html;
+        }
+    </script>
+</body>
+</html>

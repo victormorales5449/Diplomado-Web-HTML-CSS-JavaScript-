@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <fieldset>
+        <legend>Datos del Estudiante</legend>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre" required title="Introducir el nombre">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ingrese el apellido" required>
+        <br>
+        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+        <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+        <br>
+        <label for="ocupacion">Ocupación</label>
+        <select>
+            <option value="Maestro">Maestro</option>
+            <option value="Estudiante">Estudiante</option>
+            <option value="Comerciane">Comerciante</option>
+        </select>
+        <br>
+        <label for="observaciones">Comentarios</label><br>
+        <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
+        <br>
+        <label for="Password">Contraseña</label>
+        <input type="password" name="Password" id="Password">
+        <br>
+        <input type="submit" value="Guardar"> 
+        <input type="reset" value="Limpiar Campos">
+    </fieldset>
+    </form>
+</body>
+
+</html>

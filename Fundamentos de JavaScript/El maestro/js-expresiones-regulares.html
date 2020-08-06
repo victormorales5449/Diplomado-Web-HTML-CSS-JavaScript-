@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>
+    <form>
+        <label for="texto">Correo Electrónico</label>
+        <input type="text" name="texto" id="texto">
+        <br>
+        <label for="texto">Teléfono</label>
+        <input type="text" name="telefono" id="telefono">
+        <br>
+        <label for="cedula">Cédula</label>
+        <input type="text" name="cedula" id="cedula">
+        <br>
+        <input type="button" value="Enviar" onclick="validar()">
+    </form>
+    </p>
+    <script>
+        function validar() {
+            var valor = document.getElementById("texto").value;
+            if(!validarEmail(valor))
+            {
+                document.getElementById("texto").focus();
+                return;
+            }
+
+            valor = document.getElementById("telefono").value;
+            if(!validarTelefono(valor))
+            {
+                document.getElementById("telefono").focus();
+                return;
+            }
+
+            valor = document.getElementById("cedula").value;
+            if(!validarCedula(valor))
+            {
+                document.getElementById("cedula").focus();
+                return;
+            }
+
+        }
+        function validarEmail(valor) {
+
+            if (valor.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
+                alert("La dirección de email " + valor + " es correcta.");
+                return true;
+            } else {
+                alert("La dirección de email es incorrecta.");
+            }
+            return false;
+        }
+        function validarTelefono(valor) {
+
+            if (valor.match(/^\d{3}-\d{3}-\d{4}$/)) {
+                alert("El formato del teléfono: " + valor + " es correcto.");
+            } else {
+                alert("Formato de teléfono incorrecto. Use xxx-xxx-xxxx");
+            }
+        }
+        function validarCedula(valor) {
+
+            if (valor.match(/^\d{3}-\d{7}-\d{1}$/)) {
+                alert("El formato de la cédula: " + valor + " es correcto.");
+            } else {
+                alert("Formato de cédula incorrecto. Use xxx-xxxxxxx-x");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
