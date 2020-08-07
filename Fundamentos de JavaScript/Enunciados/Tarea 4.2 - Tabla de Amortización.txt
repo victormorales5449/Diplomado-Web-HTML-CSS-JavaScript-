@@ -1,0 +1,18 @@
+Crear una página de HTML que utilice Bootstrap para desarrollar la interfaz del usuario.
+
+La página debe pedir el monto del préstamo, la tasa de interés y la cantidad de tiempo. Luego calcule el monto de la cuota fija mensual y genere la tabla de amortización utilizando javascript.
+
+La tabla debe contener las siguientes columnas:
+
+Número de cuota
+Fecha de pago
+Monto cuota
+Capital
+Interés
+Balance
+
+Ver los siguientes enlaces para que les sirva de ejemplo:
+
+http://www.tabla-amortizacion.es/tabla-amortizacion-prestamo/
+https://www.sib.gob.do/calculadora-de-prestamos
+https://www.cooperativasanjose.com.do/app/amortizacion.aspx
