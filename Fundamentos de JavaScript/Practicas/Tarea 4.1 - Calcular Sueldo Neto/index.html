@@ -9,29 +9,22 @@
 </head>
 <body>
 
-    <form class="form">
+    <form class="form mt-5" id="form">
         <fieldset>
             <legend>Calcular el sueldo</legend>
             
             <div class="form-group">
                 <label for="sueldo_bruto">Sueldo Bruto</label>
-                <input type="text" class="form-control" id="sueldo_bruto" aria-describedby="emailHelp"
+                <input type="number" class="form-control" id="sueldo_bruto" aria-describedby="emailHelp"
                     placeholder="Ejemplo: $RD10,000.00">
                 <small id="messageHelp" class="form-text text-muted"></small>
             </div>
-
-            <div class="form-group">
-                <label for="afp">AFP</label>
-                <input type="text" class="form-control" id="afp" placeholder="2.87% Ej: $RD287.00">
-            </div> 
             
-            <div class="form-group">
-                <label for="afp">AFP</label>
-                <input type="text" class="form-control" id="afp" placeholder="2.87% Ej: $RD287.00">
-            </div>
+            <div id="result"></div>
+            
 
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Calcular</button>
+                <button class="btn btn-primary">Calcular</button>
             </div>
         </fieldset>
     </form>

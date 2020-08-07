@@ -7,13 +7,113 @@ Sueldo Bruto
 Introduzca el sueldo bruto
 ARS	3.04%
 AFP	2.87%
-IRS	15%
+IRS	15%  20%   25%
 Total Descuentos	
 Sueldo Neto
 
 
 
+El Impuesto sobre la Renta grava toda ingreso percibido por parte de los empleados de acurdo al Título II Ley 11-92 d/f 16/05/1992 y sus modificaciones.
 
+El impuesto sobre tiene tres escalas y cada una de ellas tiene tres porcentajes diferentes. Los porcentajes de las escalas se establecen anualmente en la primera semana de Enero, esta es una de las principales razones para que el Código Tributario de la República Dominicana se actualice todos los años.
+
+Tabla de rentas
+
+De 399,923.00              Exento
+
+Desde 399,923.01         hasta    599,884.00  15% del excedente de 399,923.00
+
+Desde 599,884.00       hasta    833,171.00 29,994.00 más 20% del excedente de 599,884.00
+
+Desde 833,171.01 en adelante 76,652.00 más 25% del excedente de 833,171.01.
+
+Esta es la base para calcular en ISR, ahora vamos a realizar un ejemplo para mayor entendimiento.
+
+La base imponible para calcular el Impuesto Sobre la Renta para asalariados es todo lo devengando durante el mes menos el SFS,  AFP y el pago del Per cápita en caso de que los hubiera.
+
+Caso 1.
+
+El señor Carlos López devenga un sueldo de 42,513.00.
+
+42,513.00 * 3.04% = 1,292.40
+
+42,513.00 * 2.87% = 1,220.12
+
+Total de deducciones 2,512.52
+
+42,513.00 – 2,512.52 = 40,000.00 (redondeado) base imponible para el cálculo
+
+Multiplicamos el sueldo por 12 para determinar el monto anual
+
+40,000.00 x 12 = 480,000.00
+
+Le restamos la primera escala 480,000.00 – 399,923.00 = 80,077.00
+
+Como el monto anual no excede la segunda escala le aplicamos el porcentaje de la primera escala
+
+80,077.00 x 15% = 12,011.15, ahora ya tenemos el ISR anual lo dividimos por 12 para llevar su valor por mes.
+
+12,011.15 / 12 = 1,000.90
+
+1,000.96 es el Impuesto sobre la Renta que debe pagar un empleado que devengue un sueldo de 42,513.00 mensuales.
+
+Caso 2.
+
+Juan Almonte gana 63,769.00 mensual
+
+63,769.00 * 3.04% = 1,938.58
+
+63,769.00 * 2.87% = 1,830.17
+
+Total de deducciones 3,768.75
+
+63,769.00 – 3,768.75 = 60,000.00 (redondeado) base imponible para el cálculo
+
+60,000.00 x 12 = 720,000.00, como este monto supera la segunda escala, se la restamos.
+
+720,000.00 – 599,844.00 = 120,116.00
+
+120,116.00 x 20% = 24,023.20, ahora le sumamos 29,994.00 tal establece el Código Tributario
+
+24,023.20 + 29,994.00 = 54,017.20 lo llevamos a meses
+
+54,017.20 / 12 = 4,501.43
+
+4,501.43 es el Impuesto sobre la Renta que debe pagar un empleado que devengue un sueldo de 63,769.00 mensuales.
+
+Caso 3.
+
+Julia Hernández devenga u sueldo mensual de 125,920.00
+
+125,920.00 * 3.04% = 2,305.23
+
+125,920.00 * 2.87% = 3,613.90
+
+Total de deducciones 5,919.23
+
+125,920.00 – 5,919.23 = 120,000.00 (redondeado) base imponible para el cálculo
+
+120,000.00 x 12 = 1, 440,000.00, como este monto supera la tercera escala, se la restamos.
+
+1, 440,000.00 – 833,171.00 = 606,829.00
+
+606,829.00 x 25% = 151,707.20, ahora le sumamos 76,652.00 tal establece el Código Tributario
+
+151,707.20 + 76,652.00 = 228,359.20 lo llevamos a meses
+
+228,359.20 / 12 = 19,029.94
+
+19,029.94 es el Impuesto sobre la Renta que debe pagar un empleado que devengue un sueldo de 125,920.00 mensuales.
+
+Listo, ya hemos mostrado como calcular el ISR a salariados (empleados).
+
+Pueden verificar los cálculos usando la calculadora de retenciones de la DGII, recuerde que debe utilizar la base imponible para el cálculo, que es el sueldo total menos los descuentos SFS, AFP y Per cápita.
+
+Para descargar herramienta para calcular el impuesto Clic aquí  
+
+Espero le sea de utilidad
+
+Gracias
 
 api publica
 http://www.omdbapi.com/?i=tt3896198&apikey=aba6b3af
