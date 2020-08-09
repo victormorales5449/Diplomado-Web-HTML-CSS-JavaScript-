@@ -5,7 +5,6 @@ const render = document.querySelector(".table tbody");
 // funcion para calcular la amortizacion de un prestamo 
 const amortizacion = (monto, interes, tiempo) => {
     render.innerHTML = '';   
-
     let fechas = [];
     let mesActual = moment(Date.now());
     mesActual.add(1, 'month');
