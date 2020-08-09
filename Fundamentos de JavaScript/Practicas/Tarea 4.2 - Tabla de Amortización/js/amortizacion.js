@@ -1,102 +1,69 @@
 const form = document.getElementById("form");
-const message = document.getElementById("messageHelp");
-const render = document.getElementById("result");
+const message = document.getElementById("message");
+const render = document.querySelector(".table tbody");
 
-// funcion para procesar el sueldo
-const procesar = (e) => {
-    e.preventDefault();
+// funcion para calcular la amortizacion de un prestamo 
+const amortizacion = (monto, interes, tiempo) => {
+    render.innerHTML = '';   
 
-    // variables para hacer los calculos 
-    let afp = 0.0287;
-    let ars = 0.0304;
-    let isr1 = 0.15;
-    let isr2 = 0.2;
-    let isr3 = 0.25;
-    let t_descuento = 0;
-    let s_neto = 0;
-    let r_isr = 0;
-    let exento = 399923;
-    let monto = 0;
-    let impuesto = 0;
+    let fechas = [];
+    let mesActual = moment(Date.now());
+    mesActual.add(1, 'month');
 
-    const s_bruto = document.getElementById("sueldo_bruto"); // capturo el campo del sueldo
+    if (monto !== "" && interes !== "" && tiempo !== "") {
+        let pagoInteres = 0, pagoCapital = 0, cuota = 0;
 
-    // hago algunas validaciones para procesar el sueldo
-    if (s_bruto.value !== "") {
-        r_afp = s_bruto.value * afp;
-        r_ars = s_bruto.value * ars;
-        t_descuento = r_afp + r_ars;
-        s_neto = s_bruto.value - Math.trunc(t_descuento);
-        r_isr = (s_neto * 12) > exento ? s_neto * 12 : "Exento";
+        // formula para obtener las cuotas del pago
+        cuota = monto * (Math.pow(1 + interes / 100, tiempo) * interes / 100) / (Math.pow(1 + interes / 100, tiempo) - 1);
+        
+        for (let i = 1; i <= tiempo; i++) {
+            pagoInteres = parseFloat(monto * (interes / 100)); // obtenemos el interes
+            pagoCapital = cuota - pagoInteres;   // obtenemos el capital  
+            monto = parseFloat(monto - pagoCapital); // obtenemos el balance
+            // console.log(monto);
+            fechas[i] = mesActual.format("DD-MM-YYYY");
+            mesActual.add(1, 'month');
 
-        // valido si el monto es excento y procede a hacer el calculo
-        if (r_isr > exento) {
-            // forma no. 1 con el 15% del ISR
-            if (r_isr > 399923) {
-                monto = r_isr - exento;
-                impuesto = (monto * isr1) / 12;
-            }
+            const row = document.createElement("tr"); // creo la fila para cuando recorra el loop vaya reando las filas dependiendo del tiempo
+            row.innerHTML = `
+                <tr>
+                    <td>${i}</td>
+                    <td>${fechas[i]}</td>
+                    <td>${cuota.toFixed(2)}</td>
+                    <td>${pagoCapital.toFixed(2)}</td>
+                    <td>${pagoInteres.toFixed(2)}</td>
+                    <td>${monto.toFixed(2)}</td>                
+                </tr>
+            `;
 
-            // forma no. 2 con el 20% del ISR
-            if (r_isr > 599884) {
-                monto = r_isr - exento;
-                impuesto = ((monto * isr2) + 29994) / 12;
-            }
-            
-            // forma no. 3 con el 25% del ISR
-            if (r_isr > 3833171) {
-                monto = r_isr - exento;
-                impuesto = ((monto * isr3) + 76652) / 12;
-            }
-
-        } else {
-            impuesto = r_isr; // si no supera el exento, imprime el mensaje
+            render.appendChild(row);
         }
 
-
-        render.innerHTML = `
-        <div class="form-group">
-                <label for="afp">AFP</label>
-                <input type="text" class="form-control" id="afp" value="$RD ${r_afp}" disabled readonly>
-            </div> 
-            
-            <div class="form-group">
-                <label for="ars">ARS</label>
-                <input type="text" class="form-control" id="ars" value="$RD ${r_ars}" disabled readonly>
-            </div> 
-            
-            <div class="form-group">
-                <label for="isr">ISR</label> 
-                <input type="text" class="form-control" id="isr" value="${impuesto}" disabled readonly>
-            </div> 
-            
-            <div class="form-group">
-                <label for="descuento">Total descuento</label>
-                <input type="text" class="form-control" id="descuento" value="$RD ${t_descuento}" disabled readonly>
-            </div> 
-            
-            <div class="form-group">
-                <label for="sueldo_neto">Sueldo neto</label>
-                <input type="text" class="form-control" id="sueldo_neto" value="$RD ${s_neto}" disabled readonly>
-            </div>
-        `;
-
     } else {
-        message.innerHTML = "Debe llenear el campo";
+        message.innerHTML = `<div class="alert alert-danger" role="alert">
+                                    Debes llenar los campos
+                            </div >`;
+        setTimeout(() => message.innerHTML = "", 4000);
     }
-}
 
-// funcion para cancelar y eliminar los datos del campo sueldo bruto
+}
+// funcion para cancelar y eliminar los datos del formulario
 const cancelar = (e) => {
     render.innerHTML = "";
-    document.getElementById("sueldo_bruto").focus();
+    document.getElementById("monto").focus();
 }
 
-form.addEventListener("submit", procesar); // evento para el submit
-form.addEventListener("reset", cancelar); // evento para el cancelar de un formulario
+form.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    const monto = document.getElementById("monto");
+    const interes = document.getElementById("tasa_interes");
+    const tiempo = document.getElementById("p_meses");
+    amortizacion(monto.value, interes.value, tiempo.value);
+}); // evento para el submit
+form.addEventListener("reset", cancelar); // evento para el cancelar del formulario
 
-/*  
+/*
      ***********   Nota:  ******************
 
-    mi logica no es muy buena pero espero que pueda ser entendida
+    mi lógica no es muy buena pero espero que pueda ser entendida
 */
