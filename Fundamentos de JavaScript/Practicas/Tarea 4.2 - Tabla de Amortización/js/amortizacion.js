@@ -14,7 +14,7 @@ const render = document.querySelector(".table tbody");
 
 // funcion para calcular la amortizacion de un prestamo 
 const amortizacion = (monto, interes, tiempo) => {
-    render.innerHTML = '';   
+    render.innerHTML = '';
     let fechas = [];
     let mesActual = moment(Date.now());
     mesActual.add(1, 'month');
@@ -23,10 +23,10 @@ const amortizacion = (monto, interes, tiempo) => {
         let pagoInteres = 0, pagoCapital = 0, cuota = 0;
 
         // formula para obtener las cuotas del pago
-        cuota = monto * (Math.pow(1 + interes / 100, tiempo) * interes / 100) / (Math.pow(1 + interes / 100, tiempo) - 1);
-        
+        cuota = monto * (Math.pow(1 + (interes / 100) / 12, tiempo) * (interes / 100) / 12) / (Math.pow(1 + (interes / 100) / 12, tiempo) - 1);
+
         for (let i = 1; i <= tiempo; i++) {
-            pagoInteres = parseFloat(monto * (interes / 100)); // obtenemos el interes
+            pagoInteres = parseFloat(monto * (interes / 100) / 12); // obtenemos el interes
             pagoCapital = cuota - pagoInteres;   // obtenemos el capital  
             monto = parseFloat(monto - pagoCapital); // obtenemos el balance
             // console.log(monto);
@@ -62,7 +62,7 @@ const cancelar = (e) => {
     document.getElementById("monto").focus();
 }
 
-form.addEventListener("submit", (e)=>{
+form.addEventListener("submit", (e) => {
     e.preventDefault();
     const monto = document.getElementById("monto");
     const interes = document.getElementById("tasa_interes");
