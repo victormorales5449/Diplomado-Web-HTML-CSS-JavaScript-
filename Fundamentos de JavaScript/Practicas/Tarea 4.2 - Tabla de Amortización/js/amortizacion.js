@@ -1,3 +1,13 @@
+/*
+propiedad de @author: Victor L Morales M
+
+este tema nunca he podido entenderlo, con esta formula francesa las cuotas me dan diferentes 
+a las que usan en el banco dominicano, la verdad es que no entiendo, pero realice el ejercicio.
+
+seguire investigando para ver si consigo el calculo que usan los bancos dominicanos y asi poder estar 
+bien con esta practica.
+*/
+
 const form = document.getElementById("form");
 const message = document.getElementById("message");
 const render = document.querySelector(".table tbody");
