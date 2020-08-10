@@ -57,12 +57,12 @@ const procesar = (e) => {
         render.innerHTML = `
         <div class="form-group">
                 <label for="afp">AFP</label>
-                <input type="text" class="form-control" id="afp" value="$RD ${r_afp}" disabled readonly>
+                <input type="text" class="form-control" id="afp" value="RD$ ${r_afp}" disabled readonly>
             </div> 
             
             <div class="form-group">
                 <label for="ars">ARS</label>
-                <input type="text" class="form-control" id="ars" value="$RD ${r_ars}" disabled readonly>
+                <input type="text" class="form-control" id="ars" value="RD$ ${r_ars}" disabled readonly>
             </div> 
             
             <div class="form-group">
@@ -72,12 +72,12 @@ const procesar = (e) => {
             
             <div class="form-group">
                 <label for="descuento">Total descuento</label>
-                <input type="text" class="form-control" id="descuento" value="$RD ${t_descuento}" disabled readonly>
+                <input type="text" class="form-control" id="descuento" value="RD$ ${t_descuento}" disabled readonly>
             </div> 
             
             <div class="form-group">
                 <label for="sueldo_neto">Sueldo neto</label>
-                <input type="text" class="form-control" id="sueldo_neto" value="$RD ${s_neto}" disabled readonly>
+                <input type="text" class="form-control" id="sueldo_neto" value="RD$ ${s_neto}" disabled readonly>
             </div>
         `;
 
