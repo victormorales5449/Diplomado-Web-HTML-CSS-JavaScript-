@@ -36,25 +36,22 @@ const procesar = (e) => {
             if (r_isr >= exento) {
                 monto = r_isr - exento;
                 impuesto = parseFloat((monto * isr1) / 12);
-                t_descuento = r_afp + r_ars + impuesto;
-                s_neto = s_bruto.value - t_descuento;
             }
 
             // forma no. 2 con el 20% del ISR
             if (r_isr >= exento2) {
                 monto = r_isr - exento2;
                 impuesto = parseFloat(((monto + 31216) * isr2) / 12);
-                t_descuento = r_afp + r_ars + impuesto;
-                s_neto = s_bruto.value - t_descuento;
             }
 
             // forma no. 3 con el 25% del ISR
             if (r_isr >= exento3) {
                 monto = r_isr - exento3;
                 impuesto = parseFloat(((monto + 79776) * isr3) / 12);
-                t_descuento = r_afp + r_ars + impuesto;
-                s_neto = s_bruto.value - t_descuento;
             }
+
+            t_descuento = r_afp + r_ars + impuesto;
+            s_neto = s_bruto.value - t_descuento;
 
         } else {
             impuesto = r_isr; // si no supera el exento, imprime el mensaje
