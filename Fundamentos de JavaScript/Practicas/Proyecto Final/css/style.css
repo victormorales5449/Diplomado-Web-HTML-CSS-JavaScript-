@@ -1,6 +1,13 @@
+@media screen and (min-width: 1024px){
+    .carousel-item{
+        height: 90vh;
+    }
+}
 
+.carousel-item img{
+    max-width: 100%;
+}
 
-form{
-    width: 400px;
-    margin: auto;
+.text{
+    text-align: center;
 }
