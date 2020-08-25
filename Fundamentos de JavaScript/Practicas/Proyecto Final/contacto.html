@@ -19,11 +19,12 @@
     <meta http-equiv="cache-control" content="no-cache" />
     <title>Master Tecno</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Master Tecno</a>
@@ -33,13 +34,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="portafolio.html">Portafolio</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
@@ -61,74 +62,38 @@
         </nav>
     </header>
 
-    <div id="caruselTecno" class="carousel slide carousel-fade" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#caruselTecno" data-slide-to="0" class="active"></li>
-            <li data-target="#caruselTecno" data-slide-to="1"></li>
-            <li data-target="#caruselTecno" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/slide-02.jpg" class="d-block w-100" alt="Tecnologia 1">
-            </div>
-            <div class="carousel-item">
-                <img src="img/slide-12.jpg" class="d-block w-100" alt="Tecnologia 2">
-            </div>
-            <div class="carousel-item">
-                <img src="img/slide-img02.jpg" class="d-block w-100" alt="Tecnologia 3">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#caruselTecno" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#caruselTecno" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
-    <div class="container text mt-5">
-        <h2>Servicios</h2>
-        <p>Nosotros nos encargamos de ofrecer diferentes tipos de servicio en el area de tecnologia</p>
-    </div>
-
-    <div class="container mt-5">
+    <div class="container ">
         <div class="row">
-            <div class="col-sm-6 mt-2 col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/mantenimiento1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Mantenimiento</h5>
-                        <p class="card-text">Ofrecemos todo tipo de mantenimiento de los equipos informáticos de su
-                            oficina y hogar.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+            <div class="col-sm-12 col-lg-6 mt-5">
+                <div class="map">
+                    <h2>Nuestra localización</h2>
+                    <div class="card">
+                        <img src="img/mi hogar.png" class="card-img-top" alt="...">
                     </div>
                 </div>
             </div>
-
-            <div class="col-sm-6 mt-2 col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/conectividad.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Conectividad</h5>
-                        <p class="card-text">Ofrecemos las mejores herramientas para que tengas una buena conectividad
-                            en sus equipos informáticos.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+            <div class="col-sm-12 col-lg-6 mt-5">
+                <h2>Contactanos</h2>
+                <form class="mt-3">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Digite su nombre">
                     </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 mt-2 col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/images.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo web</h5>
-                        <p class="card-text">Diseñamos sitio web a su medida, solo tienes que decirnos que necesitas y
-                            hacemos realidad lo solicitado.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" class="form-control" id="email" placeholder="Escriba su correo electronico">
                     </div>
-                </div>
+    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="6" placeholder="Escriba un mensaje"></textarea>
+                    </div>
+    
+                    <div class="form-group">
+                        <button class="btn btn-primary mb-2">Enviar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

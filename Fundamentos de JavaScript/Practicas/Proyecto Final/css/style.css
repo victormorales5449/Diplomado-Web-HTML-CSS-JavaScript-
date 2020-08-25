@@ -8,6 +8,20 @@
     max-width: 100%;
 }
 
+.copyright{
+    text-align: center;
+}
+
 .text{
     text-align: center;
+}
+
+.row .card{
+    margin: auto;
+}
+
+@media screen and (min-width: 1024px){
+    .row{
+        justify-content: space-between;
+    }
 }
