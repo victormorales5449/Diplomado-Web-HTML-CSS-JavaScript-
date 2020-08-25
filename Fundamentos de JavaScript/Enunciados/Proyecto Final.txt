@@ -4,6 +4,7 @@ El mismo debe contener los siguientes elementos:
 
 1. Inicio. Debe aparecer un  carrousel con al menos 3 imágenes con un tamaño de banner que tome el 
 90% de la pantalla. Debajo debe aparecer un área que explique de qué se trata el sitio web.
+----------------------------------------------------------------------------------------------------
 
 2. Sobre Mi. Una pequeña biografía del creador del sitio web, puede incluir una fotografía suya, si así lo desea.
 
@@ -21,6 +22,8 @@ Cálculo Sueldo Neto, Cálculo Amortización. Cada opción debe cargar la págin
 
 Recuerde que en todas las páginas debe estar presente el NAVBAR con las opciones de menú citadas anteriormente.
 
-Puede realizar el sitio web con el tema de su preferencia, por ejemplo: video juegos, películas, deportes, gaming, jardinería, perfumería, cosméticos, etc.
+Puede realizar el sitio web con el tema de su preferencia, por ejemplo: video juegos, películas, deportes, gaming, 
+jardinería, perfumería, cosméticos, etc.
 
-Si usted considera que debe variar la estructura planteada anteriormente, puede hacer los cambios de lugar. Pero asegúrese de que tenga al menos 5 secciones o páginas y que la página de Utilitarios esté presente.
+Si usted considera que debe variar la estructura planteada anteriormente, puede hacer los cambios de lugar. 
+Pero asegúrese de que tenga al menos 5 secciones o páginas y que la página de Utilitarios esté presente.
