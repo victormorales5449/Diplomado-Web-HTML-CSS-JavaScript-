@@ -1,8 +1,8 @@
  import {
      MasterTeach, Select, Selects
- } from "./general";
+ } from "./general.js";
  
- class contactosMetainford extends Metainford {}
+ class contactosMetainford extends MasterTeach {}
 
  let new_contactos = new contactosMetainford();
  new_contactos.initSocial();

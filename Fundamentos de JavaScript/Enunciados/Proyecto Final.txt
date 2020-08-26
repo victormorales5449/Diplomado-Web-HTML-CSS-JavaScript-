@@ -2,13 +2,16 @@ Crear un sitio web personal utilizando todo lo aprendido en el curso.
 
 El mismo debe contener los siguientes elementos:
 
+----------------------------------------------------------------------------------------------------
 1. Inicio. Debe aparecer un  carrousel con al menos 3 imágenes con un tamaño de banner que tome el 
 90% de la pantalla. Debajo debe aparecer un área que explique de qué se trata el sitio web.
 ----------------------------------------------------------------------------------------------------
 
 2. Sobre Mi. Una pequeña biografía del creador del sitio web, puede incluir una fotografía suya, si así lo desea.
 
+-----------------------------------------------------------------------------------------------------
 3. Contacto. Colocar un formulario de contacto y enlaces a sus redes sociales.
+-----------------------------------------------------------------------------------------------------
 
 4. Portafolio. Colocar un listado de los proyectos en los que ha trabajado, si no tiene, sea creativo y coloque 
 información ficticia.
@@ -16,9 +19,11 @@ información ficticia.
 5. Enlaces de Interés. Colocar un listado de enlaces que pueden ser de interés para las personas que visiten 
 su sitio web. Aquí puede incluir URL a texto o videos.
 
+--------------------------------------------------------------------------------------------------------
 6. Utilitarios. Aquí coloque las páginas del cálculo de sueldo neto y cálculo de amortización que hizo 
 en tareas anteriores. Coloque la opción del menú Utilitarios con dos opciones en el dropdown: 
 Cálculo Sueldo Neto, Cálculo Amortización. Cada opción debe cargar la página correspondiente.
+--------------------------------------------------------------------------------------------------------
 
 Recuerde que en todas las páginas debe estar presente el NAVBAR con las opciones de menú citadas anteriormente.
 

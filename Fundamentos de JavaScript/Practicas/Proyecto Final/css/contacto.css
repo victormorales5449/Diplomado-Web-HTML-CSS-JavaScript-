@@ -1,0 +1,83 @@
+:root {
+
+    /* colores para pagina de curriculum */
+    --d-contacto: #28c3ef;
+    --d-hobbies: #0e8fc9;
+    --d-redes: #a5dbe5;
+    --d-niveles: #b6e2e2;
+    --d-perfil: #95a5a6;
+
+    /* Colores de la redes sociales */
+    --Facebook: #3b5998;
+    --Google: #dd4b39;
+    --YouTube: #bb0000;
+    --Twitter: #55acee;
+    --Telegram: #0088cc;
+    --Linkedin: #c1c8cc;
+    --Instagram: #125688;
+    --Pinterest: #cb2027;
+    --Tumblr: #32506d;
+    --Imgur: #85bf25;
+    --Flickr: #ff0084;
+    --Vimeo: #aad450;
+    --Foursquare: #0072b1;
+    --hi5: #fd9827;
+    --WhatsApp: #4dc247;
+    --Snapchat: #fffc00;
+    --SoundCloud: #ff8800;
+    --Periscope: #35A3C6;
+    --Tinder: #E34514;
+
+}
+
+.list-redes {
+    padding: 0;
+    margin-top: 24px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list-redes a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+}
+
+.list-redes a:hover {
+    cursor: pointer;
+}
+
+.list-redes a .socialicon {
+    padding: 9px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.list-redes a .icon-facebook {
+    background-color: var(--Facebook);
+}
+
+.list-redes a .icon-whatsapp {
+    background-color: var(--WhatsApp);
+}
+
+.list-redes a .icon-linkedin {
+    background-color: var(--Linkedin);
+}
+
+.list-redes a .icon-instagram {
+    background-color: var(--Instagram);
+}
+
+.list-redes a .icon-twitter {
+    background-color: var(--Twitter);
+}
+
+.list-redes a .icon-telegram {
+    background-color: var(--Telegram);
+}
+
+.copyright {
+    text-align: center;
+}
