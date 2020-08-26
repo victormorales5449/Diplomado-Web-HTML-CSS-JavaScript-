@@ -7,17 +7,23 @@ El mismo debe contener los siguientes elementos:
 90% de la pantalla. Debajo debe aparecer un área que explique de qué se trata el sitio web.
 ----------------------------------------------------------------------------------------------------
 
+----------------------------------------------------------------------------------------------------
 2. Sobre Mi. Una pequeña biografía del creador del sitio web, puede incluir una fotografía suya, si así lo desea.
+----------------------------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------------------------
 3. Contacto. Colocar un formulario de contacto y enlaces a sus redes sociales.
 -----------------------------------------------------------------------------------------------------
 
+-----------------------------------------------------------------------------------------------------
 4. Portafolio. Colocar un listado de los proyectos en los que ha trabajado, si no tiene, sea creativo y coloque 
 información ficticia.
+-----------------------------------------------------------------------------------------------------
 
+-------------------------------------------------------------------------------------------------------
 5. Enlaces de Interés. Colocar un listado de enlaces que pueden ser de interés para las personas que visiten 
 su sitio web. Aquí puede incluir URL a texto o videos.
+-------------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------------
 6. Utilitarios. Aquí coloque las páginas del cálculo de sueldo neto y cálculo de amortización que hizo 

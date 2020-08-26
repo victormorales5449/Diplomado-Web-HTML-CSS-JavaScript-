@@ -1,0 +1,419 @@
+/*  {
+    display: grid;
+    padding-top: 50px;
+} */
+
+:root {
+    /* colores para pagina de curriculum */
+    --d-contacto: #28c3ef;
+    --d-hobbies: #0e8fc9;
+    --d-redes: #a5dbe5;
+    --d-niveles: #b6e2e2;
+    --d-perfil: #95a5a6;
+
+    /* Colores de la redes sociales */
+    --Facebook: #3b5998;
+    --Google: #dd4b39;
+    --YouTube: #bb0000;
+    --Twitter: #55acee;
+    --Telegram: #0088cc;
+    --Linkedin: #c1c8cc;
+    --Instagram: #125688;
+    --Pinterest: #cb2027;
+    --Tumblr: #32506d;
+    --Imgur: #85bf25;
+    --Flickr: #ff0084;
+    --Vimeo: #aad450;
+    --Foursquare: #0072b1;
+    --hi5: #fd9827;
+    --WhatsApp: #4dc247;
+    --Snapchat: #fffc00;
+    --SoundCloud: #ff8800;
+    --Periscope: #35A3C6;
+    --Tinder: #E34514;
+
+}
+
+.list-redes {
+    padding: 0;
+    margin-top: 24px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list-redes a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+}
+
+.list-redes a:hover {
+    cursor: pointer;
+}
+
+.list-redes a .socialicon {
+    padding: 9px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.list-redes a .icon-facebook {
+    background-color: var(--Facebook);
+}
+
+.list-redes a .icon-whatsapp {
+    background-color: var(--WhatsApp);
+}
+
+.list-redes a .icon-linkedin {
+    background-color: var(--Linkedin);
+}
+
+.list-redes a .icon-instagram {
+    background-color: var(--Instagram);
+}
+
+.list-redes a .icon-twitter {
+    background-color: var(--Twitter);
+}
+
+.list-redes a .icon-telegram {
+    background-color: var(--Telegram);
+}
+
+.content {
+    display: grid;
+    margin-top: 60px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        grid-template-columns: 340px 1fr;
+    }
+}
+
+.datos-personales .d-perfil {
+    background-color: var(--d-perfil);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.datos-personales .d-perfil .pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 0;
+    background-image: url(../img/victororales-09-02-03.jpg);
+    background-size: cover;
+    margin: 20px auto 0;
+}
+
+.datos-personales .d-perfil h2,
+.datos-personales .d-perfil h3 {
+    text-align: center;
+    color: black;
+}
+
+.datos-personales .d-perfil h2 {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 0;
+    color: #fafcb2;
+}
+
+.datos-personales .d-perfil h3 {
+    margin-top: 5px;
+    margin-bottom: 37px;
+    text-transform: uppercase;
+    color: blue;
+    color: rgba(255, 252, 0, 0.7);
+    font-size: 13px;
+}
+
+.datos-personales .d-contacto,
+.datos-personales .d-niveles,
+.datos-personales .d-hobbies,
+.datos-personales .d-redes {
+    color: #fff;
+    /* padding-top: 10px; */
+    position: relative;
+    font-family: "tahoma", "Geneva", sans-serif;
+    letter-spacing: 1px;
+    padding: 15px 10px;
+}
+
+.datos-personales .d-contacto h3,
+.datos-personales .d-niveles h3,
+.datos-personales .d-hobbies h3,
+.datos-personales .d-redes h3 {
+    text-align: center;
+    margin-top: -53px;
+    position: absolute;
+    padding: 15px;
+    font-size: 20px;
+    padding-bottom: 0;
+    border-radius: 25px;
+    margin-left: -125px;
+    width: 250px;
+    left: 50%;
+    height: 60px;
+    text-transform: uppercase;
+}
+
+.datos-personales .d-contacto ul,
+.datos-personales .d-niveles ul,
+.datos-personales .d-hobbies ul,
+.datos-personales .d-redes ul {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    list-style: none;
+}
+
+.datos-personales .d-contacto ul li,
+.datos-personales .d-niveles ul li,
+.datos-personales .d-hobbies ul li,
+.datos-personales .d-redes ul li {
+    padding: 10px 2px;
+}
+
+.datos-personales .d-contacto ul li i,
+.datos-personales .d-niveles ul li i,
+.datos-personales .d-hobbies ul li i,
+.datos-personales .d-redes ul li i {
+    font-size: 22px;
+    margin-right: 10px;
+    margin-top: -4px;
+}
+
+.datos-personales .d-niveles,
+.datos-personales .d-niveles h3 {
+    background-color: #0d557d;
+}
+
+.datos-personales .o-container {
+    display: flex;
+}
+
+.datos-personales .o-container .n-objetos {
+    --objetos: #82ccdd;
+}
+
+.datos-personales .o-container .n-objetos li,
+.datos-personales .o-container .n-objetos li::before {
+    border-radius: 0 5px 5px 0;
+}
+
+.datos-personales .o-container .n-objetos li {
+    background-color: transparent;
+    height: 7px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 214px;
+    position: relative;
+    padding: 8px;
+    border: 2px solid var(--objetos);
+}
+
+.datos-personales .o-container .n-objetos li::before {
+    content: "";
+    width: 96%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--objetos);
+}
+
+.datos-personales .o-container .n-objetos li:nth-child(2)::before {
+    width: 60%;
+}
+
+.datos-personales .o-container .n-objetos li:nth-child(3)::before {
+    width: 83%;
+}
+
+.datos-personales .o-container .n-objetos li:nth-child(4)::before {
+    width: 94%;
+}
+
+.datos-personales .d-contacto {
+    background-color: var(--d-contacto);
+    color: #314372;
+}
+
+.datos-personales .d-contacto h3 {
+    background-color: var(--d-contacto);
+    color: currentColor;
+}
+
+.datos-personales .d-contacto ul {
+    list-style: none;
+}
+
+.datos-personales .d-contacto ul li {
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    padding: 10px 5px;
+    margin-right: 5px;
+}
+
+.datos-personales .d-contacto ul li span {
+    font-weight: bolder;
+    color: #091116;
+    font-weight: 300;
+}
+
+.datos-personales .d-contacto ul li span b {
+    color: black;
+}
+
+.datos-personales .d-hobbies {
+    background-color: var(--d-hobbies);
+}
+
+.datos-personales .d-hobbies h3 {
+    background-color: var(--d-hobbies);
+}
+
+.datos-personales .d-hobbies .list-bobbien {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.datos-personales .d-hobbies .list-bobbien li {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.datos-personales .d-hobbies .list-bobbien li span {
+    color: lemonchiffon;
+    font-weight: 600;
+    align-self: start;
+}
+
+.datos-personales .d-redes {
+    background-color: var(--d-redes);
+    color: black;
+}
+
+.datos-personales .d-redes h3 {
+    background-color: var(--d-redes);
+}
+
+.datos-personales .d-redes .list-redes {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.information {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.information .i-title {
+    background-color: #e1e2e4;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+    line-height: 17px;
+}
+
+.information .i-title i {
+    margin-right: 5px;
+    position: absolute;
+    left: 20px;
+    font-size: 22px;
+    top: 12px;
+    color: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+    .information .i-title i {
+        left: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .information .i-title {
+        margin-left: -26px;
+        margin-right: -15px;
+    }
+}
+
+.information .i-texto {
+    line-height: 20px;
+    text-indent: 25px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.information .i-panel {
+    list-style: none;
+}
+
+.information .i-panel li {
+    display: grid;
+    grid-template-columns: 85px 1fr;
+    /* grid-gap: 1px; */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.information .i-panel li::before,
+.information .i-panel li::after {
+    content: "";
+    position: absolute;
+    background-color: var(--dark);
+    top: 5px;
+}
+
+.information .i-panel li::before {
+    left: -25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.information .i-panel li::after {
+    left: -21px;
+    width: 2px;
+    height: calc(100% + 10px);
+}
+
+.information .i-panel li:last-child::after {
+    content: none;
+}
+
+.information .i-panel li span {
+    width: 85px;
+    display: inline-block;
+    padding-top: 3px;
+}
+
+.information .i-panel li .i-container h3 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        margin-top: 0;
+    }
+
+    .content .o-container .n-objetos li {
+        width: 125px;
+    }
+}
