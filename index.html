@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        .frm-calculadora {
+            margin: 40px auto;
+            width: 274px;
+        }
+
+        .btn-c {
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-c button {
+            margin-right: 5px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 20px;
+            border: none;
+            background: #595856;
+            color: #fff;
+        }
+
+        .resultado {
+            padding: 15px 20px;
+            width: 85%;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid #595856;
+            font-size: 21px;
+            text-align: right;
+        }
+
+        .btn-c:nth-child(6) button {
+            display: inline-block;
+            width: 120px;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .btn-c:nth-child(2),
+        .btn-c:nth-child(4) {
+            width: 200px;
+        }
+
+        .btn-c:nth-child(4) {
+            margin-top: -40px;
+        }
+
+        .btn-c:nth-child(3) button:last-child,
+        .btn-c:nth-child(5) button:last-child {
+            height: 100px;
+            position: relative;
+            top: -52px;
+            border-radius: 5px;
+        }
+
+        .btn-c:nth-child(6) {
+            position: relative;
+            top: -50px;
+        }
+
+        button:focus {
+            outline: none;
+            border: none;
+            transform: scale(.99);
+        }
+
+        button:active {
+            transform: scale(.95);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form id="frm-calculadora" class="frm-calculadora">
+            <div class="resultado" id="screen"></div>
+
+            <div class="btn-c">
+                <button data-numero="7">7</button>
+                <button data-numero="8">8</button>
+                <button data-numero="9">9</button>
+            </div>
+
+            <div class="btn-c">
+                <button data-numero="4">4</button>
+                <button data-numero="5">5</button>
+                <button data-numero="6">6</button>
+                <button data-math="menos">-</button>
+            </div>
+
+            <div class="btn-c">
+                <button data-numero="1">1</button>
+                <button data-numero="2">2</button>
+                <button data-numero="3">3</button>
+            </div>
+
+            <div class="btn-c">
+                <button class="cero" data-numero="0">0</button>
+                <button class="punto" data-numero=".">.</button>
+                <button data-operacion="limpiar">C</button>
+                <button data-math="suma">+</button>
+            </div>
+
+            <div class="btn-c">
+                <button data-math="multi">*</button>
+                <button data-math="divide">/</button>
+                <button class="igual" data-operacion="igual">=</button>
+            </div>
+        </form>
+    </main>
+
+    <script>
+       
+       // Declararacion de variables 
+        const screen = document.getElementById("screen");
+        const teclas = document.getElementById("frm-calculadora");
+
+        let numero1, estadoOperacion = false;
+        screen.textContent = "0";
+
+        teclas.addEventListener("click", evt => {
+            evt.preventDefault();
+            const tc = evt.target , 
+                ds = tc.dataset;
+
+            // Detectar las teclas de numero
+            if (ds.numero) {
+                pintarPantalla(ds.numero)
+            }
+
+            // detectar las teclas de operacion matematica
+            if (ds.math) {
+                matematica(tc, ds.math);
+            }
+
+            if (ds.operacion) {
+                ejecutarOperacion(ds.operacion, numero1, tipoOperacion);
+            }
+        });
+
+        /*
+            = asigna valor
+            == compara valores sin importar el tipo
+            === compara valores del mismo tipio
+            and && comparacion verdadera
+            or || comparacion almenos una verdaera
+
+            condicion ? valor verdadero : valor falso
+
+            if() {
+
+            } else {
+
+            }
+
+        */
+
+
+        // funcion para imprimir en la pantalla de resultado
+        const pintarPantalla = numero => {
+            screen.textContent === "0" || estadoOperacion === true || screen.textContent === "No se divide entre cero" 
+            ? screen.textContent = numero
+            : screen.textContent += numero;
+            estadoOperacion = false;
+
+        }
+
+        // funcion para las operaciones matematicas 
+        const matematica = (elem, operacion) => {
+            estadoOperacion = true;
+            numero1 = Number(screen.textContent);
+            tipoOperacion = operacion;
+            screen.textContent = elem.textContent
+        }
+
+        const ejecutarOperacion = (operacion, dato1, tipoValor) => {
+            const obtnerResultado = (valor1, tipo) => {
+                const valor2 = Number(screen.textContent);
+                switch (tipo) {
+                    case "suma":
+                            screen.textContent = valor1 + valor2
+                        break;
+
+                    case "menos":
+                            screen.textContent = valor1 - valor2
+                        break;
+
+                    case "multi":
+                            screen.textContent = valor1 * valor2
+                        break;
+
+                    case "divide":
+                            valor2 == 0
+                            ? screen.textContent = "No se divide entre cero"
+                            : screen.textContent = valor1 / valor2;                         
+                        break;
+                }
+            }
+
+            operacion === "limpiar"
+            ? screen.textContent = "0"
+            : obtnerResultado(dato1, tipoValor)
+        }
+
+    </script>
+</body>
+
+</html>
